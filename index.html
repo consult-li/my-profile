@@ -604,6 +604,7 @@
             </div>
             <p>&copy; 2026 Consult Data Li. This is a self-owned, portable professional profile.</p>
             <p style="font-size: 0.9em; opacity: 0.8;">Built with HTML/CSS/JavaScript for maximum portability and control.</p>
+            <p style="font-size: 0.85em; opacity: 0.65; margin-top: 12px;">Last updated: <span id="lastModified">&mdash;</span></p>
         </div>
     </footer>
 
@@ -985,6 +986,16 @@
             tag.textContent = kw;
             keywordsTags.appendChild(tag);
         });
+
+        // Render Last Modified
+        // Sourced from the server's Last-Modified header, so it tracks each deploy automatically
+        const lastModifiedDate = new Date(document.lastModified);
+        document.getElementById('lastModified').textContent = isNaN(lastModifiedDate)
+            ? document.lastModified
+            : lastModifiedDate.toLocaleString(undefined, {
+                year: 'numeric', month: 'long', day: 'numeric',
+                hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+            });
 
         // Download PDF
         function downloadPDF() {
