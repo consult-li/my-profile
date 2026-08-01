@@ -1,0 +1,370 @@
+{
+  "personal": {
+    "name": "Consult Data Li",
+    "alsoKnownAs": "DWBI Erudite",
+    "title": "Data Engineer & Platform Architect",
+    "location": "Remote, US-based",
+    "email": "hello@data-li.com",
+    "linkedIn": "linkedin.com/in/consultli",
+    "yearsExperience": 15,
+    "keyTechnologies": "Azure Lakehouse · Databricks · Unity Catalog · Data Vault 2.0"
+  },
+
+  "professionalSummary": "Proven track record of implementing architecture that works beyond the engagement: systems that survive ownership changes, platforms that junior developers can maintain, and pipelines that don't require the original architect to debug. Three engagement models: embedded principal engineer for organizations without a functioning data team; greenfield or turnaround platform architecture and implementation; and retained fractional architect post-build.",
+
+  "keyAchievement": {
+    "title": "Flagship Long-Term Impact",
+    "description": "In 2012, architected a sample tracking and regulatory reporting system for AMPAC on Microsoft Azure—then still an early-stage platform. Thirteen years later, through multiple subsequent divestitures and ownership changes, that organization is still running and has credited the Azure decision with their ability to maintain operational independence. That engagement remains active."
+  },
+
+  "coreCompetencies": {
+    "architecture": {
+      "category": "Architecture",
+      "proficiency": 5,
+      "skills": ["Domain-Driven Lakehouse", "Unity Catalog", "Medallion Architecture", "Data Vault 2.0", "Provider-Based Integration Frameworks", "Multi-Environment Platform Design", "Dimensional & Relational Modeling"]
+    },
+    "dataPlatforms": {
+      "category": "Data Platforms",
+      "proficiency": 5,
+      "skills": ["Databricks", "Delta Lake", "Delta Live Tables", "Snowflake", "Redshift", "Azure SQL", "MS SQL Server", "Oracle 11g", "PostgreSQL", "MySQL", "MongoDB", "DynamoDB"]
+    },
+    "dataEngineering": {
+      "category": "Data Engineering",
+      "proficiency": 5,
+      "skills": ["ETL/ELT", "Batch & Streaming Pipelines", "Databricks Workflows", "Apache Spark", "PySpark", "Azure Data Factory", "ADLS", "SnowPipe", "Kafka", "dbt", "Data Governance", "Microsoft Purview"]
+    },
+    "cloudDevOps": {
+      "category": "Cloud & DevOps",
+      "proficiency": 5,
+      "skills": ["Microsoft Azure (enterprise adopter since 2012)", "AWS", "Azure DevOps", "Databricks Asset Bundles", "Delta Sharing", "Confluent Cloud", "REST API", "OAuth 2.0", "SalesForce Sales API"]
+    },
+    "languages": {
+      "category": "Languages",
+      "proficiency": 5,
+      "skills": ["Python", "SQL", "Spark SQL", "T-SQL", "Oracle PL/SQL", "PowerShell", "C#.NET", "JavaScript", "VB.NET/VBA"]
+    },
+    "aiAssisted": {
+      "category": "AI-Assisted Development",
+      "proficiency": 4,
+      "skills": ["Prompt Engineering", "Claude", "ChatGPT", "GitHub Copilot", "AI as execution layer for architecture-driven delivery"]
+    }
+  },
+
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "Data Engineer",
+      "company": "Large Infrastructure Engineering & Program Management Firm",
+      "type": "Staff Augmentation",
+      "startDate": "Feb 2023",
+      "endDate": "Present",
+      "duration": "2+ years",
+      "keyAccomplishments": [
+        "Architecting enterprise-wide data platform from the ground up as embedded sole Senior Data Engineer",
+        "Source systems: Oracle EBS/HCM, Deltek Vision (SQL Server), Salesforce, Ivanti, TeamDynamix",
+        "Designed domain-driven Unity Catalog architecture with catalog naming conventions, provider-specific staging schemas, and four-layer workspace structure (platforms / providers / domains / shared)",
+        "Engineered extensible provider-based ingestion framework using YAML-driven configuration and decorator-based transformation registries—explicitly architected for knowledge transfer to entry-level SQL developers",
+        "Architected multi-environment platform (dev/QC/prod) using Databricks Asset Bundles and Delta Sharing for environment isolation",
+        "Directing Salesforce CRM integration architecture; established OAuth 2.0 connectivity and REST API provider scaffolding"
+      ],
+      "technologiesUsed": ["Databricks", "Unity Catalog", "YAML", "Oracle EBS/HCM", "Salesforce", "Delta Sharing"]
+    },
+    {
+      "id": 2,
+      "title": "Data Engineer",
+      "company": "Trimble, Inc.",
+      "type": "W-2",
+      "startDate": "Mar 2022",
+      "endDate": "Jul 2025",
+      "duration": "3+ years",
+      "keyAccomplishments": [
+        "Consolidated 5+ enterprise information systems into unified source of truth for MEP Construction division of global construction technology company",
+        "Architected enterprise Data Vault 2.0 implementation; designed hub, satellite, and link structures for historized reporting across project, cost, and workforce domains",
+        "Built production data pipelines on Azure Data Factory, Azure Function Apps, and Databricks Workflows",
+        "Established monitoring and pipeline reliability framework",
+        "Developed enterprise data quality management framework with automated profiling and rule validation"
+      ],
+      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows", "Azure Function Apps"]
+    },
+    {
+      "id": 3,
+      "title": "Data Modeler / Lead Developer",
+      "company": "Choice Hotels International / SkyTouch Technology",
+      "type": "Contract",
+      "startDate": "Jan 2022",
+      "endDate": "Jan 2023",
+      "duration": "1 year",
+      "keyAccomplishments": [
+        "Return engagement with Choice Hotels ecosystem—previously delivered enterprise data mart (2020–2021); repeat client relationship reflects trust in delivered results",
+        "Designed data models covering accounting, guest profiles, and hotel operations on SkyTouch cloud-based property management system",
+        "Led 8+ junior developers through schema navigation, data validation planning, and quality checkpoints"
+      ],
+      "technologiesUsed": ["SkyTouch", "SQL Server", "Data Modeling"]
+    },
+    {
+      "id": 4,
+      "title": "Associate Director of Enterprise Data",
+      "company": "Bookbyte",
+      "location": "Salem, OR",
+      "type": "W-2",
+      "startDate": "Jan 2020",
+      "endDate": "Mar 2022",
+      "duration": "2+ years",
+      "keyAccomplishments": [
+        "Promoted from Senior Data Engineer to Associate Director",
+        "Lead architect for ERP data integration with Acumatica, Snowflake, and AWS DMS",
+        "Led full cloud migration of on-premises infrastructure to Azure and AWS",
+        "Authored BCP/DRP plans and security/governance policies",
+        "Designed Celigo iPaaS transformation flows for normalized ERP data loads",
+        "Built SnowPipe-based ingestion pipelines from multiple external sources"
+      ],
+      "technologiesUsed": ["Snowflake", "SnowPipe", "Azure", "AWS", "Celigo", "Acumatica"]
+    },
+    {
+      "id": 5,
+      "title": "Principal Consultant",
+      "company": "Consult Li / DWBI Erudite",
+      "clientsServed": "Various Clients",
+      "type": "Consulting",
+      "startDate": "2015",
+      "endDate": "2020",
+      "duration": "5 years",
+      "keyAccomplishments": [
+        "Microsoft & Best Buy: Consolidated and transformed raw retail operations data into marketing intelligence platforms",
+        "12+ legacy system migrations for insurance, legal, and government clients (LegalKey, Trim, RecFind) to modern cloud SaaS/PaaS platforms",
+        "Architected dynamic data ingestion platform for SQL Server and Oracle sources with automated schema profiling and extraction strategy optimization"
+      ],
+      "technologiesUsed": ["SQL Server", "Oracle", "Cloud platforms"]
+    },
+    {
+      "id": 6,
+      "title": "Data Engineering Consultant",
+      "company": "AMPAC subdivision (now independent)",
+      "type": "Ongoing Consulting",
+      "startDate": "2012",
+      "endDate": "Present",
+      "duration": "13+ years (Ongoing)",
+      "keyAccomplishments": [
+        "Secured this engagement before leaving AMPAC in 2012 at the point of divestiture",
+        "Recommended and architected on Microsoft Azure in 2012, when enterprise Azure adoption was still limited",
+        "Built proprietary sample tracking and regulatory reporting system in continuous production use for 13+ years",
+        "System survived multiple ownership transitions—client leadership credits Azure decision with operational independence",
+        "Continues to maintain and extend the platform; supporting operational analytics and compliance reporting workflows",
+        "Strong reference available from client leadership"
+      ],
+      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"],
+      "isLongstanding": true
+    },
+    {
+      "id": 7,
+      "title": "Senior Manager, Data & IT",
+      "company": "American Pacific Corporation (AMPAC)",
+      "location": "Las Vegas, NV",
+      "type": "W-2",
+      "startDate": "2008",
+      "endDate": "2012",
+      "duration": "4 years",
+      "keyAccomplishments": [
+        "Promoted from Senior IT Projects Specialist into senior management",
+        "Led cross-functional data and technology programs across IT, Finance, Manufacturing, and Chemical Engineering",
+        "Established enterprise data warehouse on Oracle eBusiness Suite data supporting executive BI and manufacturing analytics",
+        "Designed and deployed proprietary sampling and labs information management system on SQL Server/SSIS, replacing manual paper-based process",
+        "This system became the foundation of the post-divestiture platform built on Azure",
+        "At 2012 divestiture, recommended Azure to newly independent subdivision and secured the consulting agreement",
+        "Built Oracle eBusiness Suite extensions and custom reports; developed SharePoint solutions for change tracking, patent management, and project delivery"
+      ],
+      "technologiesUsed": ["Oracle eBusiness Suite", "SQL Server", "SSIS", "SharePoint"]
+    }
+  ],
+
+  "portfolioProjects": [
+    {
+      "id": 1,
+      "name": "13+ Year Production Sample Tracking Platform",
+      "client": "AMPAC subdivision",
+      "startDate": "2012",
+      "endDate": "Ongoing",
+      "duration": "13+ years",
+      "description": "Flagship long-term engagement demonstrating ability to architect systems that survive ownership changes.",
+      "role": "Principal Architect & Ongoing Consultant",
+      "challenge": "Newly independent subsidiary needed complete data infrastructure from scratch with no parent company systems to rely on, facing multiple future ownership transitions.",
+      "solution": "Architected on Microsoft Azure in 2012 at the point of early adoption risk. Built sample tracking and regulatory reporting system with design principles focused on long-term maintainability and operational independence.",
+      "results": [
+        "Continuous production use for 13+ years across multiple ownership transitions",
+        "Client leadership credits Azure decision with ability to maintain operational independence",
+        "System still active with ongoing maintenance and enhancements",
+        "Operational analytics and compliance reporting workflows remain core to operations"
+      ],
+      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"],
+      "keyTakeaway": "Proof that thoughtful architecture decisions deliver lasting value beyond initial engagement"
+    },
+    {
+      "id": 2,
+      "name": "Enterprise-Wide Data Platform Architecture",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2023",
+      "endDate": "Present",
+      "description": "Ground-up enterprise data platform architected as embedded sole Senior Data Engineer.",
+      "role": "Embedded Principal Data Engineer",
+      "challenge": "Organization lacked functioning data team. Multiple enterprise source systems (Oracle EBS, Salesforce, SQL Server) needed unified platform. Required architecture that entry-level developers could maintain and extend.",
+      "solution": "Designed domain-driven Unity Catalog architecture with YAML-driven configuration and decorator-based transformation registries. Multi-environment setup (dev/QC/prod) using Databricks Asset Bundles and Delta Sharing for isolation within organizational constraints.",
+      "results": [
+        "Extensible ingestion framework explicitly architected for knowledge transfer to entry-level developers",
+        "Provider-specific staging schemas and four-layer workspace structure (platforms/providers/domains/shared)",
+        "OAuth 2.0 Salesforce CRM integration established ahead of external consulting engagement",
+        "Platform positioned for long-term maintainability and scalability"
+      ],
+      "technologiesUsed": ["Databricks", "Unity Catalog", "Delta Lake", "YAML", "Databricks Asset Bundles", "Delta Sharing"],
+      "keyTakeaway": "Low-code configuration frameworks enable knowledge transfer and long-term platform ownership"
+    },
+    {
+      "id": 3,
+      "name": "Data Vault 2.0 Enterprise Implementation",
+      "client": "Trimble, Inc.",
+      "startDate": "2022",
+      "endDate": "2025",
+      "description": "Consolidated 5+ enterprise information systems into unified source of truth for construction technology company's MEP division.",
+      "role": "Data Engineer & Architect",
+      "challenge": "Global construction technology company needed to consolidate multiple enterprise systems (project, cost, workforce) with complex historical tracking requirements.",
+      "solution": "Architected and implemented enterprise Data Vault 2.0 with hub, satellite, and link structures for historized reporting. Built production pipelines on Azure Data Factory and Databricks Workflows with monitoring and reliability framework.",
+      "results": [
+        "Unified source of truth across 5+ systems",
+        "Enterprise data quality management with automated profiling and rule validation",
+        "Reliable pipeline framework with comprehensive monitoring"
+      ],
+      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows", "Azure Function Apps"],
+      "keyTakeaway": "DV 2.0 provides scalable architecture for complex multi-source integrations"
+    },
+    {
+      "id": 4,
+      "name": "Cloud Infrastructure Migration & Modernization",
+      "client": "Bookbyte",
+      "startDate": "2020",
+      "endDate": "2022",
+      "description": "Full cloud migration of on-premises infrastructure; ERP data integration architecture.",
+      "role": "Associate Director of Enterprise Data",
+      "challenge": "On-premises infrastructure not scalable; needed modern cloud ERP integration with Acumatica and Snowflake.",
+      "solution": "Led full migration to Azure and AWS. Designed Celigo iPaaS transformation flows for ERP data normalization. Built SnowPipe ingestion pipelines from multiple external sources. Authored comprehensive BCP/DRP and governance policies.",
+      "results": [
+        "Successfully migrated to cloud platforms",
+        "Automated SnowPipe-based ingestion from multiple sources",
+        "Comprehensive disaster recovery and business continuity planning",
+        "Enterprise security and governance policies established"
+      ],
+      "technologiesUsed": ["Snowflake", "SnowPipe", "Azure", "AWS", "Celigo", "Acumatica"],
+      "keyTakeaway": "Strategic cloud platform selection enables long-term agility"
+    },
+    {
+      "id": 5,
+      "name": "Legacy System Migrations (Insurance, Legal, Government)",
+      "client": "Multiple Clients",
+      "startDate": "2015",
+      "endDate": "2020",
+      "description": "12+ legacy system migrations to modern cloud SaaS/PaaS platforms.",
+      "role": "Principal Consultant",
+      "challenge": "Organizations dependent on aging legacy systems (LegalKey, Trim, RecFind) unable to scale or adapt.",
+      "solution": "Architected migrations to modern cloud platforms with minimal disruption. Designed dynamic data ingestion platform with automated schema profiling and extraction strategy optimization.",
+      "results": [
+        "12+ successful migrations to cloud SaaS/PaaS",
+        "Automated schema profiling reducing migration effort",
+        "Organizations able to leverage modern platform capabilities"
+      ],
+      "technologiesUsed": ["SQL Server", "Oracle", "Cloud platforms", "Schema profiling"],
+      "keyTakeaway": "Thoughtful migration strategy unlocks organization agility"
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "Microsoft Azure AI Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2025
+    },
+    {
+      "name": "Azure Security Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2025
+    },
+    {
+      "name": "Azure Data Engineer Associate",
+      "issuer": "Microsoft",
+      "year": 2024
+    },
+    {
+      "name": "Azure Data Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2024
+    },
+    {
+      "name": "Azure Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2024
+    },
+    {
+      "name": "Architecting Distributed Cloud Applications in Azure",
+      "issuer": "Microsoft",
+      "year": 2023
+    },
+    {
+      "name": "Implementing Data Solutions in Azure SQL",
+      "issuer": "Microsoft",
+      "year": 2023
+    },
+    {
+      "name": "Principles of Statistics",
+      "issuer": "Coursera",
+      "year": 2022
+    }
+  ],
+
+  "industryExperience": [
+    "Construction Technology",
+    "Hospitality & Hotels",
+    "Retail & E-commerce",
+    "Specialty Chemicals & Manufacturing",
+    "Legal Services",
+    "Technology Platforms",
+    "Government",
+    "Insurance"
+  ],
+
+  "keywords": [
+    "Senior Data Engineer",
+    "Data Architect",
+    "Azure Databricks",
+    "Unity Catalog",
+    "Delta Lake",
+    "Delta Live Tables",
+    "Databricks Workflows",
+    "Databricks Asset Bundles",
+    "Data Vault 2.0",
+    "Medallion Architecture",
+    "dbt",
+    "Apache Spark",
+    "PySpark",
+    "ETL",
+    "ELT",
+    "Azure Data Factory",
+    "Azure Data Lake Storage",
+    "Snowflake",
+    "SnowPipe",
+    "Kafka",
+    "REST API",
+    "OAuth 2.0",
+    "Python",
+    "SQL",
+    "T-SQL",
+    "Oracle PL/SQL",
+    "Microsoft Azure",
+    "AWS",
+    "Azure DevOps",
+    "Data Governance",
+    "Microsoft Purview",
+    "Master Data Management",
+    "Dimensional Modeling",
+    "Lakehouse Architecture",
+    "Salesforce Integration",
+    "Oracle EBS",
+    "Deltek Vision"
+  ]
+}

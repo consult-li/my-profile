@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult Data Li - Data Engineer & Platform Architect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .aka {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        header .title {
+            font-size: 1.8em;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        header .tech-stack {
+            font-size: 0.95em;
+            opacity: 0.85;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            transition: border-color 0.3s;
+        }
+
+        .contact-info a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .summary-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .summary-box h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .summary-box p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .key-achievement {
+            background: #e3f2fd;
+            border-left: 4px solid #2a5298;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .key-achievement h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2a5298;
+        }
+
+        /* Competencies Grid */
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .competency-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .competency-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .competency-card h3 {
+            color: #2a5298;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .proficiency-bar {
+            width: 100%;
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .proficiency-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2a5298, #1e3c72);
+            border-radius: 3px;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            padding: 6px 0;
+            color: #555;
+            font-size: 0.95em;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        .skills-list li:last-child {
+            border-bottom: none;
+        }
+
+        .skills-list li:before {
+            content: "▸ ";
+            color: #2a5298;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #2a5298;
+            transition: transform 0.3s;
+        }
+
+        .timeline-item:hover {
+            transform: translateX(5px);
+        }
+
+        .timeline-item h3 {
+            color: #1e3c72;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .company {
+            color: #2a5298;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .dates {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item .duration {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1e3c72;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .accomplishments {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .accomplishments li {
+            padding: 8px 0 8px 20px;
+            color: #555;
+            position: relative;
+        }
+
+        .accomplishments li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2a5298;
+            font-weight: bold;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .tech-tag {
+            background: #f0f0f0;
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid #ddd;
+        }
+
+        /* Portfolio Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .project-card-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 25px;
+        }
+
+        .project-card-header h3 {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+
+        .project-card-header .client {
+            font-size: 0.95em;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .project-card-header .duration {
+            font-size: 0.85em;
+            opacity: 0.8;
+        }
+
+        .project-card-body {
+            padding: 25px;
+            flex: 1;
+        }
+
+        .project-card-body h4 {
+            color: #1e3c72;
+            margin: 12px 0 8px 0;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .project-card-body p {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .project-card-body ul {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+
+        .project-card-body ul li {
+            padding: 4px 0 4px 20px;
+            position: relative;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .project-card-body ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #2a5298;
+        }
+
+        .key-takeaway {
+            background: #f5f5f5;
+            padding: 12px;
+            border-left: 3px solid #2a5298;
+            margin-top: 15px;
+            font-size: 0.95em;
+            font-style: italic;
+            color: #333;
+        }
+
+        /* Certifications */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .cert-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-top: 3px solid #2a5298;
+        }
+
+        .cert-item h3 {
+            color: #1e3c72;
+            font-size: 1.05em;
+            margin-bottom: 8px;
+        }
+
+        .cert-item .issuer {
+            color: #2a5298;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .cert-item .year {
+            color: #999;
+            font-size: 0.85em;
+            margin-top: 5px;
+        }
+
+        /* Industry & Keywords */
+        .tags-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .tags-section h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Footer & Actions */
+        footer {
+            background: #1e3c72;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #2a5298;
+            color: white;
+            border: 2px solid #2a5298;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: #2a5298;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #1e3c72;
+        }
+
+        footer p {
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            header {
+                page-break-after: avoid;
+            }
+
+            .project-card, .competency-card, .timeline-item {
+                page-break-inside: avoid;
+            }
+
+            .actions {
+                display: none;
+            }
+
+            section {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header .title {
+                font-size: 1.2em;
+            }
+
+            .competencies-grid,
+            .projects-grid,
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section h2 {
+                font-size: 1.4em;
+            }
+
+            .timeline-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="name">Consult Data Li</h1>
+            <div class="aka">a/k/a DWBI Erudite</div>
+            <div class="title" id="title">Data Engineer & Platform Architect</div>
+            <div class="tech-stack" id="techStack">Azure Lakehouse · Databricks · Unity Catalog · Data Vault 2.0 · 15+ Years</div>
+            <div class="contact-info">
+                <span id="location">Remote, US-based</span>
+                <a href="mailto:hello@data-li.com" id="email">hello@data-li.com</a>
+                <a href="https://linkedin.com/in/consultli" target="_blank" id="linkedin">linkedin.com/in/consultli</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Professional Summary -->
+        <section class="summary-box">
+            <h2>Consulting Profile</h2>
+            <p id="summary"></p>
+            <div class="key-achievement" id="keyAchievement"></div>
+        </section>
+
+        <!-- Core Competencies -->
+        <section id="competencies">
+            <h2>Core Competencies</h2>
+            <div class="competencies-grid" id="competenciesGrid"></div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience">
+            <h2>Professional Engagements</h2>
+            <div class="timeline" id="timeline"></div>
+        </section>
+
+        <!-- Portfolio Projects -->
+        <section id="portfolio">
+            <h2>Portfolio & Key Projects</h2>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications-grid" id="certificationsGrid"></div>
+        </section>
+
+        <!-- Industry & Keywords -->
+        <section id="keywords">
+            <div class="tags-section">
+                <h3>Industry Experience</h3>
+                <div class="tags-container" id="industryTags"></div>
+            </div>
+            <div class="tags-section">
+                <h3>Key Skills & Keywords</h3>
+                <div class="tags-container" id="keywordsTags"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="actions">
+                <button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button>
+                <button class="btn btn-secondary" onclick="copyContactInfo()">Copy Contact Info</button>
+                <button class="btn btn-secondary" onclick="shareProfile()">Share Profile</button>
+            </div>
+            <p>&copy; 2026 Consult Data Li. This is a self-owned, portable professional profile.</p>
+            <p style="font-size: 0.9em; opacity: 0.8;">Built with HTML/CSS/JavaScript for maximum portability and control.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Load and render profile data
+        const profileData = {
+  "personal": {
+    "name": "Consult Data Li",
+    "alsoKnownAs": "DWBI Erudite",
+    "title": "Data Engineer & Platform Architect",
+    "location": "Remote, US-based",
+    "email": "hello@data-li.com",
+    "linkedIn": "linkedin.com/in/consultli",
+    "yearsExperience": 15,
+    "keyTechnologies": "Azure Lakehouse · Databricks · Unity Catalog · Data Vault 2.0"
+  },
+  "professionalSummary": "Proven track record of implementing architecture that works beyond the engagement: systems that survive ownership changes, platforms that junior developers can maintain, and pipelines that don't require the original architect to debug. Three engagement models: embedded principal engineer for organizations without a functioning data team; greenfield or turnaround platform architecture and implementation; and retained fractional architect post-build.",
+  "keyAchievement": {
+    "title": "Flagship Long-Term Impact",
+    "description": "In 2012, architected a sample tracking and regulatory reporting system for AMPAC on Microsoft Azure—then still an early-stage platform. Thirteen years later, through multiple subsequent divestitures and ownership changes, that organization is still running and has credited the Azure decision with their ability to maintain operational independence. That engagement remains active."
+  },
+  "coreCompetencies": {
+    "architecture": {
+      "category": "Architecture",
+      "proficiency": 5,
+      "skills": ["Domain-Driven Lakehouse", "Unity Catalog", "Medallion Architecture", "Data Vault 2.0", "Provider-Based Integration Frameworks", "Multi-Environment Platform Design", "Dimensional & Relational Modeling"]
+    },
+    "dataPlatforms": {
+      "category": "Data Platforms",
+      "proficiency": 5,
+      "skills": ["Databricks", "Delta Lake", "Delta Live Tables", "Snowflake", "Redshift", "Azure SQL", "MS SQL Server", "Oracle 11g", "PostgreSQL", "MySQL", "MongoDB", "DynamoDB"]
+    },
+    "dataEngineering": {
+      "category": "Data Engineering",
+      "proficiency": 5,
+      "skills": ["ETL/ELT", "Batch & Streaming Pipelines", "Databricks Workflows", "Apache Spark", "PySpark", "Azure Data Factory", "ADLS", "SnowPipe", "Kafka", "dbt", "Data Governance", "Microsoft Purview"]
+    },
+    "cloudDevOps": {
+      "category": "Cloud & DevOps",
+      "proficiency": 5,
+      "skills": ["Microsoft Azure (enterprise adopter since 2012)", "AWS", "Azure DevOps", "Databricks Asset Bundles", "Delta Sharing", "Confluent Cloud", "REST API", "OAuth 2.0", "SalesForce Sales API"]
+    },
+    "languages": {
+      "category": "Languages",
+      "proficiency": 5,
+      "skills": ["Python", "SQL", "Spark SQL", "T-SQL", "Oracle PL/SQL", "PowerShell", "C#.NET", "JavaScript", "VB.NET/VBA"]
+    },
+    "aiAssisted": {
+      "category": "AI-Assisted Development",
+      "proficiency": 4,
+      "skills": ["Prompt Engineering", "Claude", "ChatGPT", "GitHub Copilot", "AI as execution layer for architecture-driven delivery"]
+    }
+  },
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "Data Engineer",
+      "company": "Large Infrastructure Engineering & Program Management Firm",
+      "type": "Staff Augmentation",
+      "startDate": "Feb 2023",
+      "endDate": "Present",
+      "duration": "2+ years",
+      "keyAccomplishments": [
+        "Architecting enterprise-wide data platform from the ground up as embedded sole Senior Data Engineer",
+        "Source systems: Oracle EBS/HCM, Deltek Vision (SQL Server), Salesforce, Ivanti, TeamDynamix",
+        "Designed domain-driven Unity Catalog architecture with catalog naming conventions, provider-specific staging schemas, and four-layer workspace structure",
+        "Engineered extensible provider-based ingestion framework using YAML-driven configuration and decorator-based transformation registries",
+        "Architected multi-environment platform (dev/QC/prod) using Databricks Asset Bundles and Delta Sharing for environment isolation",
+        "Directing Salesforce CRM integration architecture; established OAuth 2.0 connectivity and REST API provider scaffolding"
+      ],
+      "technologiesUsed": ["Databricks", "Unity Catalog", "YAML", "Oracle EBS/HCM", "Salesforce", "Delta Sharing"]
+    },
+    {
+      "id": 2,
+      "title": "Data Engineer",
+      "company": "Trimble, Inc.",
+      "type": "W-2",
+      "startDate": "Mar 2022",
+      "endDate": "Jul 2025",
+      "duration": "3+ years",
+      "keyAccomplishments": [
+        "Consolidated 5+ enterprise information systems into unified source of truth for MEP Construction division",
+        "Architected enterprise Data Vault 2.0 implementation with hub, satellite, and link structures",
+        "Built production data pipelines on Azure Data Factory, Azure Function Apps, and Databricks Workflows",
+        "Established monitoring and pipeline reliability framework",
+        "Developed enterprise data quality management framework with automated profiling and rule validation"
+      ],
+      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows", "Azure Function Apps"]
+    },
+    {
+      "id": 3,
+      "title": "Data Modeler / Lead Developer",
+      "company": "Choice Hotels International / SkyTouch Technology",
+      "type": "Contract",
+      "startDate": "Jan 2022",
+      "endDate": "Jan 2023",
+      "duration": "1 year",
+      "keyAccomplishments": [
+        "Return engagement with Choice Hotels ecosystem—previously delivered enterprise data mart (2020–2021)",
+        "Designed data models covering accounting, guest profiles, and hotel operations on SkyTouch PMS",
+        "Led 8+ junior developers through schema navigation, data validation planning, and quality checkpoints"
+      ],
+      "technologiesUsed": ["SkyTouch", "SQL Server", "Data Modeling"]
+    },
+    {
+      "id": 4,
+      "title": "Associate Director of Enterprise Data",
+      "company": "Bookbyte",
+      "location": "Salem, OR",
+      "type": "W-2",
+      "startDate": "Jan 2020",
+      "endDate": "Mar 2022",
+      "duration": "2+ years",
+      "keyAccomplishments": [
+        "Promoted from Senior Data Engineer to Associate Director",
+        "Lead architect for ERP data integration with Acumatica, Snowflake, and AWS DMS",
+        "Led full cloud migration of on-premises infrastructure to Azure and AWS",
+        "Authored BCP/DRP plans and security/governance policies",
+        "Designed Celigo iPaaS transformation flows and SnowPipe-based ingestion pipelines"
+      ],
+      "technologiesUsed": ["Snowflake", "SnowPipe", "Azure", "AWS", "Celigo", "Acumatica"]
+    },
+    {
+      "id": 5,
+      "title": "Principal Consultant",
+      "company": "Consult Li / DWBI Erudite",
+      "type": "Consulting",
+      "startDate": "2015",
+      "endDate": "2020",
+      "duration": "5 years",
+      "keyAccomplishments": [
+        "Microsoft & Best Buy: Consolidated retail operations data into marketing intelligence platforms",
+        "12+ legacy system migrations for insurance, legal, and government clients to cloud SaaS/PaaS platforms",
+        "Architected dynamic data ingestion platform for SQL Server and Oracle sources with automated schema profiling"
+      ],
+      "technologiesUsed": ["SQL Server", "Oracle", "Cloud platforms"]
+    },
+    {
+      "id": 6,
+      "title": "Data Engineering Consultant",
+      "company": "AMPAC subdivision (now independent)",
+      "type": "Ongoing Consulting",
+      "startDate": "2012",
+      "endDate": "Present",
+      "duration": "13+ years (Ongoing)",
+      "keyAccomplishments": [
+        "Secured engagement at AMPAC divestiture point in 2012",
+        "Recommended and architected on Microsoft Azure when enterprise adoption was still limited",
+        "Built proprietary sample tracking and regulatory reporting system in continuous production use for 13+ years",
+        "System survived multiple ownership transitions—client credits Azure decision with operational independence",
+        "Continues to maintain and extend platform; supporting operational analytics and compliance workflows"
+      ],
+      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"]
+    }
+  ],
+  "portfolioProjects": [
+    {
+      "id": 1,
+      "name": "13+ Year Production Sample Tracking Platform",
+      "client": "AMPAC subdivision",
+      "startDate": "2012",
+      "endDate": "Ongoing",
+      "duration": "13+ years",
+      "description": "Flagship long-term engagement demonstrating ability to architect systems that survive ownership changes.",
+      "role": "Principal Architect & Ongoing Consultant",
+      "challenge": "Newly independent subsidiary needed complete data infrastructure from scratch with no parent company systems to rely on.",
+      "solution": "Architected on Microsoft Azure in 2012 at early adoption. Built sample tracking and regulatory reporting system with design principles focused on long-term maintainability.",
+      "results": [
+        "Continuous production use for 13+ years across multiple ownership transitions",
+        "Client leadership credits Azure decision with ability to maintain operational independence",
+        "System still active with ongoing maintenance and enhancements"
+      ],
+      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"],
+      "keyTakeaway": "Proof that thoughtful architecture decisions deliver lasting value beyond initial engagement"
+    },
+    {
+      "id": 2,
+      "name": "Enterprise-Wide Data Platform Architecture",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2023",
+      "endDate": "Present",
+      "description": "Ground-up enterprise data platform architected as embedded sole Senior Data Engineer.",
+      "role": "Embedded Principal Data Engineer",
+      "challenge": "Organization lacked functioning data team. Multiple enterprise source systems needed unified platform maintainable by entry-level developers.",
+      "solution": "Designed domain-driven Unity Catalog architecture with YAML-driven configuration and decorator-based transformation registries. Multi-environment setup using Databricks Asset Bundles.",
+      "results": [
+        "Extensible ingestion framework for knowledge transfer to entry-level developers",
+        "Provider-specific staging schemas and four-layer workspace structure",
+        "OAuth 2.0 Salesforce CRM integration established ahead of external consulting"
+      ],
+      "technologiesUsed": ["Databricks", "Unity Catalog", "Delta Lake", "YAML", "Databricks Asset Bundles"],
+      "keyTakeaway": "Low-code configuration frameworks enable knowledge transfer and long-term platform ownership"
+    },
+    {
+      "id": 3,
+      "name": "Data Vault 2.0 Enterprise Implementation",
+      "client": "Trimble, Inc.",
+      "startDate": "2022",
+      "endDate": "2025",
+      "description": "Consolidated 5+ enterprise information systems into unified source of truth.",
+      "role": "Data Engineer & Architect",
+      "challenge": "Construction technology company needed to consolidate multiple enterprise systems with complex historical tracking requirements.",
+      "solution": "Architected and implemented enterprise Data Vault 2.0 with hub, satellite, and link structures. Built production pipelines with monitoring framework.",
+      "results": [
+        "Unified source of truth across 5+ systems",
+        "Enterprise data quality management with automated profiling",
+        "Reliable pipeline framework with comprehensive monitoring"
+      ],
+      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows"],
+      "keyTakeaway": "DV 2.0 provides scalable architecture for complex multi-source integrations"
+    }
+  ],
+  "certifications": [
+    {"name": "Microsoft Azure AI Fundamentals", "issuer": "Microsoft", "year": 2025},
+    {"name": "Azure Security Fundamentals", "issuer": "Microsoft", "year": 2025},
+    {"name": "Azure Data Engineer Associate", "issuer": "Microsoft", "year": 2024},
+    {"name": "Azure Data Fundamentals", "issuer": "Microsoft", "year": 2024},
+    {"name": "Azure Fundamentals", "issuer": "Microsoft", "year": 2024},
+    {"name": "Architecting Distributed Cloud Applications in Azure", "issuer": "Microsoft", "year": 2023},
+    {"name": "Implementing Data Solutions in Azure SQL", "issuer": "Microsoft", "year": 2023},
+    {"name": "Principles of Statistics", "issuer": "Coursera", "year": 2022}
+  ],
+  "industryExperience": [
+    "Construction Technology",
+    "Hospitality & Hotels",
+    "Retail & E-commerce",
+    "Specialty Chemicals & Manufacturing",
+    "Legal Services",
+    "Technology Platforms",
+    "Government",
+    "Insurance"
+  ],
+  "keywords": [
+    "Senior Data Engineer",
+    "Data Architect",
+    "Azure Databricks",
+    "Unity Catalog",
+    "Delta Lake",
+    "Delta Live Tables",
+    "Databricks Workflows",
+    "Databricks Asset Bundles",
+    "Data Vault 2.0",
+    "Medallion Architecture",
+    "dbt",
+    "Apache Spark",
+    "PySpark",
+    "ETL",
+    "ELT",
+    "Azure Data Factory",
+    "Snowflake",
+    "SnowPipe",
+    "Kafka",
+    "REST API",
+    "OAuth 2.0",
+    "Python",
+    "SQL",
+    "T-SQL",
+    "Microsoft Azure",
+    "AWS",
+    "Data Governance",
+    "Microsoft Purview",
+    "Master Data Management",
+    "Lakehouse Architecture",
+    "Oracle EBS"
+  ]
+};
+
+        // Render Professional Summary
+        document.getElementById('summary').textContent = profileData.professionalSummary;
+
+        const keyAchieveEl = document.getElementById('keyAchievement');
+        keyAchieveEl.innerHTML = `
+            <h3>${profileData.keyAchievement.title}</h3>
+            <p>${profileData.keyAchievement.description}</p>
+        `;
+
+        // Render Competencies
+        const competenciesGrid = document.getElementById('competenciesGrid');
+        Object.values(profileData.coreCompetencies).forEach(comp => {
+            const card = document.createElement('div');
+            card.className = 'competency-card';
+            const proficiencyPercent = (comp.proficiency / 5) * 100;
+            card.innerHTML = `
+                <h3>${comp.category}</h3>
+                <div class="proficiency-bar">
+                    <div class="proficiency-fill" style="width: ${proficiencyPercent}%"></div>
+                </div>
+                <ul class="skills-list">
+                    ${comp.skills.map(skill => `<li>${skill}</li>`).join('')}
+                </ul>
+            `;
+            competenciesGrid.appendChild(card);
+        });
+
+        // Render Work Experience
+        const timeline = document.getElementById('timeline');
+        profileData.workExperience.forEach(exp => {
+            const item = document.createElement('div');
+            item.className = 'timeline-item';
+            item.innerHTML = `
+                <h3>${exp.title}</h3>
+                <div class="company">${exp.company}</div>
+                <div class="dates">${exp.startDate} – ${exp.endDate} <span class="duration">${exp.duration}</span></div>
+                <ul class="accomplishments">
+                    ${exp.keyAccomplishments.map(acc => `<li>${acc}</li>`).join('')}
+                </ul>
+                <div class="tech-tags">
+                    ${exp.technologiesUsed.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+            `;
+            timeline.appendChild(item);
+        });
+
+        // Render Portfolio Projects
+        const projectsGrid = document.getElementById('projectsGrid');
+        profileData.portfolioProjects.forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+            card.innerHTML = `
+                <div class="project-card-header">
+                    <h3>${project.name}</h3>
+                    <div class="client">Client: ${project.client}</div>
+                    <div class="duration">${project.startDate} – ${project.endDate}</div>
+                </div>
+                <div class="project-card-body">
+                    <p>${project.description}</p>
+
+                    <h4>Challenge</h4>
+                    <p>${project.challenge}</p>
+
+                    <h4>Solution</h4>
+                    <p>${project.solution}</p>
+
+                    <h4>Results</h4>
+                    <ul>
+                        ${project.results.map(r => `<li>${r}</li>`).join('')}
+                    </ul>
+
+                    <h4>Technologies</h4>
+                    <div class="tech-tags">
+                        ${project.technologiesUsed.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                    </div>
+
+                    <div class="key-takeaway">
+                        <strong>Key Takeaway:</strong> ${project.keyTakeaway}
+                    </div>
+                </div>
+            `;
+            projectsGrid.appendChild(card);
+        });
+
+        // Render Certifications
+        const certsGrid = document.getElementById('certificationsGrid');
+        profileData.certifications.forEach(cert => {
+            const item = document.createElement('div');
+            item.className = 'cert-item';
+            item.innerHTML = `
+                <h3>${cert.name}</h3>
+                <div class="issuer">${cert.issuer}</div>
+                <div class="year">${cert.year}</div>
+            `;
+            certsGrid.appendChild(item);
+        });
+
+        // Render Industry Experience
+        const industryTags = document.getElementById('industryTags');
+        profileData.industryExperience.forEach(ind => {
+            const tag = document.createElement('span');
+            tag.className = 'tag';
+            tag.textContent = ind;
+            industryTags.appendChild(tag);
+        });
+
+        // Render Keywords
+        const keywordsTags = document.getElementById('keywordsTags');
+        profileData.keywords.forEach(kw => {
+            const tag = document.createElement('span');
+            tag.className = 'tag';
+            tag.textContent = kw;
+            keywordsTags.appendChild(tag);
+        });
+
+        // Download PDF
+        function downloadPDF() {
+            const element = document.documentElement;
+            const opt = {
+                margin: 10,
+                filename: 'Consult_Data_Li_Profile.pdf',
+                image: {type: 'jpeg', quality: 0.98},
+                html2canvas: {scale: 2},
+                jsPDF: {orientation: 'portrait', unit: 'mm', format: 'a4'}
+            };
+
+            // Use window.print for now (user can save as PDF)
+            window.print();
+        }
+
+        // Copy Contact Info
+        function copyContactInfo() {
+            const contactText = `Consult Data Li (DWBI Erudite)\nData Engineer & Platform Architect\n\nEmail: hello@data-li.com\nLinkedIn: linkedin.com/in/consultli\nLocation: Remote, US-based`;
+            navigator.clipboard.writeText(contactText).then(() => {
+                alert('Contact information copied to clipboard!');
+            });
+        }
+
+        // Share Profile
+        function shareProfile() {
+            const profileUrl = window.location.href;
+            const shareText = `Check out my professional profile: ${profileUrl}`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Consult Data Li - Professional Profile',
+                    text: shareText,
+                    url: profileUrl
+                });
+            } else {
+                navigator.clipboard.writeText(profileUrl).then(() => {
+                    alert('Profile URL copied: ' + profileUrl);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
