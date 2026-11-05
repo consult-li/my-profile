@@ -621,31 +621,34 @@
     "yearsExperience": 15,
     "keyTechnologies": "Azure Lakehouse · Databricks · Unity Catalog · Data Vault 2.0"
   },
+
   "professionalSummary": "Proven track record of implementing architecture that works beyond the engagement: systems that survive ownership changes, platforms that junior developers can maintain, and pipelines that don't require the original architect to debug. Three engagement models: embedded principal engineer for organizations without a functioning data team; greenfield or turnaround platform architecture and implementation; and retained fractional architect post-build.",
+
   "keyAchievement": {
     "title": "Flagship Long-Term Impact",
-    "description": "In 2012, architected a sample tracking and regulatory reporting system for AMPAC on Microsoft Azure—then still an early-stage platform. Thirteen years later, through multiple subsequent divestitures and ownership changes, that organization is still running and has credited the Azure decision with their ability to maintain operational independence. That engagement remains active."
+    "description": "In 2012, architected a sample tracking and regulatory reporting system for AMPAC on Microsoft Azure—then still an early-stage platform. Fourteen years later, through multiple subsequent divestitures and ownership changes, that organization is still running and has credited the Azure decision with their ability to maintain operational independence. That engagement remains active."
   },
+
   "coreCompetencies": {
     "architecture": {
       "category": "Architecture",
       "proficiency": 5,
-      "skills": ["Domain-Driven Lakehouse", "Unity Catalog", "Medallion Architecture", "Data Vault 2.0", "Provider-Based Integration Frameworks", "Multi-Environment Platform Design", "Dimensional & Relational Modeling"]
+      "skills": ["Domain-Driven Lakehouse", "Unity Catalog", "Medallion Architecture", "Data Vault 2.0", "Provider-Based Integration Frameworks", "Producer/Consumer Contract Model", "Multi-Environment Platform Design", "Dimensional & Relational Modeling", "Architecture Decision Records (ADRs)"]
     },
     "dataPlatforms": {
       "category": "Data Platforms",
       "proficiency": 5,
-      "skills": ["Databricks", "Delta Lake", "Delta Live Tables", "Snowflake", "Redshift", "Azure SQL", "MS SQL Server", "Oracle 11g", "PostgreSQL", "MySQL", "MongoDB", "DynamoDB"]
+      "skills": ["Databricks", "Delta Lake", "Lakeflow / Delta Live Tables", "Unity Catalog Volumes", "Microsoft Fabric", "OneLake", "Azure Synapse", "Snowflake", "Redshift", "Azure SQL", "MS SQL Server", "Oracle 11g", "PostgreSQL", "MySQL", "MariaDB", "MongoDB", "DynamoDB"]
     },
     "dataEngineering": {
       "category": "Data Engineering",
       "proficiency": 5,
-      "skills": ["ETL/ELT", "Batch & Streaming Pipelines", "Databricks Workflows", "Apache Spark", "PySpark", "Azure Data Factory", "ADLS", "SnowPipe", "Kafka", "dbt", "Data Governance", "Microsoft Purview"]
+      "skills": ["ETL/ELT", "Batch & Streaming Pipelines", "Databricks Workflows", "Serverless Compute", "Apache Spark", "Spark Connect", "PySpark", "Azure Data Factory", "ADLS", "SnowPipe", "Kafka", "dbt", "Data Governance", "Microsoft Purview", "Observability & Telemetry Design", "Data-Parity Validation"]
     },
     "cloudDevOps": {
       "category": "Cloud & DevOps",
       "proficiency": 5,
-      "skills": ["Microsoft Azure (enterprise adopter since 2012)", "AWS", "Azure DevOps", "Databricks Asset Bundles", "Delta Sharing", "Confluent Cloud", "REST API", "OAuth 2.0", "SalesForce Sales API"]
+      "skills": ["Microsoft Azure (enterprise adopter since 2012)", "AWS", "Azure DevOps", "GitHub Actions CI/CD", "Databricks Asset Bundles", "Delta Sharing", "Confluent Cloud", "REST API", "OAuth 2.0", "Workload Identity Federation / Managed Identity", "Salesforce Sales API", "Microsoft Graph API"]
     },
     "languages": {
       "category": "Languages",
@@ -654,10 +657,11 @@
     },
     "aiAssisted": {
       "category": "AI-Assisted Development",
-      "proficiency": 4,
-      "skills": ["Prompt Engineering", "Claude", "ChatGPT", "GitHub Copilot", "AI as execution layer for architecture-driven delivery"]
+      "proficiency": 5,
+      "skills": ["Claude Code", "ChatGPT", "GitHub Copilot", "AI as execution layer for architecture-driven delivery (one engineer sustaining ~300 ADRs across ~20 repos)", "MCP service for governed AI-agent data access", "Unified LLM access plane (AI gateway) design", "Shared skills/agents library for platform operations"]
     }
   },
+
   "workExperience": [
     {
       "id": 1,
@@ -666,16 +670,19 @@
       "type": "Staff Augmentation",
       "startDate": "Feb 2023",
       "endDate": "Present",
-      "duration": "2+ years",
+      "duration": "3+ years",
       "keyAccomplishments": [
-        "Architecting enterprise-wide data platform from the ground up as embedded sole Senior Data Engineer",
-        "Source systems: Oracle EBS/HCM, Deltek Vision (SQL Server), Salesforce, Ivanti, TeamDynamix",
-        "Designed domain-driven Unity Catalog architecture with catalog naming conventions, provider-specific staging schemas, and four-layer workspace structure",
-        "Engineered extensible provider-based ingestion framework using YAML-driven configuration and decorator-based transformation registries",
-        "Architected multi-environment platform (dev/QC/prod) using Databricks Asset Bundles and Delta Sharing for environment isolation",
-        "Directing Salesforce CRM integration architecture; established OAuth 2.0 connectivity and REST API provider scaffolding"
+        "Architecting the enterprise data platform from the ground up as the embedded sole data engineer—now onboarding junior engineers against it; source systems include Oracle EBS/HCM, Deltek Vision (SQL Server), Salesforce, Ivanti, TeamDynamix, SharePoint, and ArcGIS Online",
+        "Designed domain-driven Unity Catalog architecture (platforms / providers / domains / shared) with provider-specific staging schemas and a producer/consumer contract model; dev/QC/prod isolation via Databricks Asset Bundles and Delta Sharing",
+        "Built config-driven ingestion engine—one invariant read_table interface with JDBC, REST, SaaS, and file adapters—integrating ~10 source systems into a faithful string-typed bronze layer; migrated the entire engine to serverless compute and Spark Connect",
+        "Designed model-driven curation engine serving seven published business domains: SMEs author logic via Excel workbook or SQL while the platform generates the publish step; snapshot-correct publishing with quarantine thresholds, hardened through three production-incident RCAs",
+        "Delivered the organization's flagship analytics product—CRM-to-warehouse sales pipeline (~two dozen coordinated jobs plus a Lakeflow pipeline) publishing governed gold to the warehouse and Microsoft Fabric; July 2026 go-live with idempotent, concurrency-safe writes across four concurrent writers",
+        "Leading legacy Azure Synapse warehouse migration to the lakehouse (541 views, 142 stored procedures, 39 pipelines) with an automated exact-parity harness—multiset plus per-column hash comparison—as the acceptance gate for finance and project-delivery reporting",
+        "Established platform governance and observability: ~300 versioned architecture decision records cited across ~20 repos, a findings register, RCA records, and program ledgers; a 6-column telemetry spine that exposed 146 silently swallowed exceptions; failure alerting on by default in deploy tooling (previously 1 of 26 production jobs)",
+        "Shipped geospatial pipeline v1.0.0 (two providers → lakehouse, Microsoft Fabric, and ArcGIS Online) with reusable GitHub Actions CI/CD and workload identity federation; built an MCP service exposing governed Unity Catalog functions to AI agents; architected a unified LLM access plane (AI gateway) with network-first telemetry containment",
+        "Hardened identity and shared infrastructure: platform persona model, workspace secret scanning, and credential convergence to federated managed identity; shared adapter-core library distributed as versioned wheels on governed volumes, with a coordinate registry pinning external resources by stable ID"
       ],
-      "technologiesUsed": ["Databricks", "Unity Catalog", "YAML", "Oracle EBS/HCM", "Salesforce", "Delta Sharing"]
+      "technologiesUsed": ["Databricks", "Unity Catalog", "Lakeflow", "Serverless / Spark Connect", "Microsoft Fabric", "Azure Synapse", "Oracle EBS/HCM", "Salesforce", "SharePoint / Graph API", "GitHub Actions", "MCP"]
     },
     {
       "id": 2,
@@ -686,8 +693,8 @@
       "endDate": "Jul 2025",
       "duration": "3+ years",
       "keyAccomplishments": [
-        "Consolidated 5+ enterprise information systems into unified source of truth for MEP Construction division",
-        "Architected enterprise Data Vault 2.0 implementation with hub, satellite, and link structures",
+        "Consolidated 5+ enterprise information systems into unified source of truth for MEP Construction division of global construction technology company",
+        "Architected enterprise Data Vault 2.0 implementation; designed hub, satellite, and link structures for historized reporting across project, cost, and workforce domains",
         "Built production data pipelines on Azure Data Factory, Azure Function Apps, and Databricks Workflows",
         "Established monitoring and pipeline reliability framework",
         "Developed enterprise data quality management framework with automated profiling and rule validation"
@@ -703,8 +710,8 @@
       "endDate": "Jan 2023",
       "duration": "1 year",
       "keyAccomplishments": [
-        "Return engagement with Choice Hotels ecosystem—previously delivered enterprise data mart (2020–2021)",
-        "Designed data models covering accounting, guest profiles, and hotel operations on SkyTouch PMS",
+        "Return engagement with Choice Hotels ecosystem—previously delivered enterprise data mart (2020–2021); repeat client relationship reflects trust in delivered results",
+        "Designed data models covering accounting, guest profiles, and hotel operations on SkyTouch cloud-based property management system",
         "Led 8+ junior developers through schema navigation, data validation planning, and quality checkpoints"
       ],
       "technologiesUsed": ["SkyTouch", "SQL Server", "Data Modeling"]
@@ -723,7 +730,8 @@
         "Lead architect for ERP data integration with Acumatica, Snowflake, and AWS DMS",
         "Led full cloud migration of on-premises infrastructure to Azure and AWS",
         "Authored BCP/DRP plans and security/governance policies",
-        "Designed Celigo iPaaS transformation flows and SnowPipe-based ingestion pipelines"
+        "Designed Celigo iPaaS transformation flows for normalized ERP data loads",
+        "Built SnowPipe-based ingestion pipelines from multiple external sources"
       ],
       "technologiesUsed": ["Snowflake", "SnowPipe", "Azure", "AWS", "Celigo", "Acumatica"]
     },
@@ -731,14 +739,15 @@
       "id": 5,
       "title": "Principal Consultant",
       "company": "Consult Li / DWBI Erudite",
+      "clientsServed": "Various Clients",
       "type": "Consulting",
       "startDate": "2015",
       "endDate": "2020",
       "duration": "5 years",
       "keyAccomplishments": [
-        "Microsoft & Best Buy: Consolidated retail operations data into marketing intelligence platforms",
-        "12+ legacy system migrations for insurance, legal, and government clients to cloud SaaS/PaaS platforms",
-        "Architected dynamic data ingestion platform for SQL Server and Oracle sources with automated schema profiling"
+        "Microsoft & Best Buy: Consolidated and transformed raw retail operations data into marketing intelligence platforms",
+        "12+ legacy system migrations for insurance, legal, and government clients (LegalKey, Trim, RecFind) to modern cloud SaaS/PaaS platforms",
+        "Architected dynamic data ingestion platform for SQL Server and Oracle sources with automated schema profiling and extraction strategy optimization"
       ],
       "technologiesUsed": ["SQL Server", "Oracle", "Cloud platforms"]
     },
@@ -749,33 +758,57 @@
       "type": "Ongoing Consulting",
       "startDate": "2012",
       "endDate": "Present",
-      "duration": "13+ years (Ongoing)",
+      "duration": "14+ years (Ongoing)",
       "keyAccomplishments": [
-        "Secured engagement at AMPAC divestiture point in 2012",
-        "Recommended and architected on Microsoft Azure when enterprise adoption was still limited",
-        "Built proprietary sample tracking and regulatory reporting system in continuous production use for 13+ years",
-        "System survived multiple ownership transitions—client credits Azure decision with operational independence",
-        "Continues to maintain and extend platform; supporting operational analytics and compliance workflows"
+        "Secured this engagement before leaving AMPAC in 2012 at the point of divestiture",
+        "Recommended and architected on Microsoft Azure in 2012, when enterprise Azure adoption was still limited",
+        "Built proprietary sample tracking and regulatory reporting system in continuous production use for 14+ years",
+        "System survived multiple ownership transitions—client leadership credits Azure decision with operational independence",
+        "Continues to maintain and extend the platform; supporting operational analytics and compliance reporting workflows",
+        "Strong reference available from client leadership"
       ],
-      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"]
+      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"],
+      "isLongstanding": true
+    },
+    {
+      "id": 7,
+      "title": "Senior Manager, Data & IT",
+      "company": "American Pacific Corporation (AMPAC)",
+      "location": "Las Vegas, NV",
+      "type": "W-2",
+      "startDate": "2008",
+      "endDate": "2012",
+      "duration": "4 years",
+      "keyAccomplishments": [
+        "Promoted from Senior IT Projects Specialist into senior management",
+        "Led cross-functional data and technology programs across IT, Finance, Manufacturing, and Chemical Engineering",
+        "Established enterprise data warehouse on Oracle eBusiness Suite data supporting executive BI and manufacturing analytics",
+        "Designed and deployed proprietary sampling and labs information management system on SQL Server/SSIS, replacing manual paper-based process",
+        "This system became the foundation of the post-divestiture platform built on Azure",
+        "At 2012 divestiture, recommended Azure to newly independent subdivision and secured the consulting agreement",
+        "Built Oracle eBusiness Suite extensions and custom reports; developed SharePoint solutions for change tracking, patent management, and project delivery"
+      ],
+      "technologiesUsed": ["Oracle eBusiness Suite", "SQL Server", "SSIS", "SharePoint"]
     }
   ],
+
   "portfolioProjects": [
     {
       "id": 1,
-      "name": "13+ Year Production Sample Tracking Platform",
+      "name": "14+ Year Production Sample Tracking Platform",
       "client": "AMPAC subdivision",
       "startDate": "2012",
       "endDate": "Ongoing",
-      "duration": "13+ years",
+      "duration": "14+ years",
       "description": "Flagship long-term engagement demonstrating ability to architect systems that survive ownership changes.",
       "role": "Principal Architect & Ongoing Consultant",
-      "challenge": "Newly independent subsidiary needed complete data infrastructure from scratch with no parent company systems to rely on.",
-      "solution": "Architected on Microsoft Azure in 2012 at early adoption. Built sample tracking and regulatory reporting system with design principles focused on long-term maintainability.",
+      "challenge": "Newly independent subsidiary needed complete data infrastructure from scratch with no parent company systems to rely on, facing multiple future ownership transitions.",
+      "solution": "Architected on Microsoft Azure in 2012 at the point of early adoption risk. Built sample tracking and regulatory reporting system with design principles focused on long-term maintainability and operational independence.",
       "results": [
-        "Continuous production use for 13+ years across multiple ownership transitions",
+        "Continuous production use for 14+ years across multiple ownership transitions",
         "Client leadership credits Azure decision with ability to maintain operational independence",
-        "System still active with ongoing maintenance and enhancements"
+        "System still active with ongoing maintenance and enhancements",
+        "Operational analytics and compliance reporting workflows remain core to operations"
       ],
       "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"],
       "keyTakeaway": "Proof that thoughtful architecture decisions deliver lasting value beyond initial engagement"
@@ -786,48 +819,303 @@
       "client": "Large Infrastructure Engineering & Program Management Firm",
       "startDate": "2023",
       "endDate": "Present",
-      "description": "Ground-up enterprise data platform architected as embedded sole Senior Data Engineer.",
+      "description": "Ground-up enterprise lakehouse platform architected and built as the embedded sole data engineer, now scaling to a team.",
       "role": "Embedded Principal Data Engineer",
-      "challenge": "Organization lacked functioning data team. Multiple enterprise source systems needed unified platform maintainable by entry-level developers.",
-      "solution": "Designed domain-driven Unity Catalog architecture with YAML-driven configuration and decorator-based transformation registries. Multi-environment setup using Databricks Asset Bundles.",
+      "challenge": "Organization lacked a functioning data team. Roughly ten enterprise source systems (Oracle EBS/HCM, a project-based ERP, Salesforce, SharePoint, GIS, ITSM) needed one governed platform that entry-level developers could maintain and extend.",
+      "solution": "Designed a domain-driven Unity Catalog architecture (platforms / providers / domains / shared) with a producer/consumer contract model, config-driven ingestion and curation engines, dev/QC/prod isolation via Databricks Asset Bundles and Delta Sharing, and a serverless-first compute policy.",
       "results": [
-        "Extensible ingestion framework for knowledge transfer to entry-level developers",
-        "Provider-specific staging schemas and four-layer workspace structure",
-        "OAuth 2.0 Salesforce CRM integration established ahead of external consulting"
+        "~10 source systems integrated through one ingestion engine; seven business domains published through one curation engine",
+        "Flagship CRM-to-warehouse analytics product live in production (July 2026) with gold delivered to Microsoft Fabric",
+        "Junior engineers now onboarding against documented architecture (~300 ADRs) rather than tribal knowledge",
+        "Platform positioned for long-term maintainability and scalability"
       ],
-      "technologiesUsed": ["Databricks", "Unity Catalog", "Delta Lake", "YAML", "Databricks Asset Bundles"],
-      "keyTakeaway": "Low-code configuration frameworks enable knowledge transfer and long-term platform ownership"
+      "technologiesUsed": ["Databricks", "Unity Catalog", "Delta Lake", "Lakeflow", "Databricks Asset Bundles", "Delta Sharing", "Microsoft Fabric"],
+      "keyTakeaway": "Configuration-driven engines plus written decisions enable knowledge transfer and long-term platform ownership"
     },
     {
       "id": 3,
+      "name": "CRM-to-Warehouse Sales Analytics Pipeline",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "Live in production",
+      "description": "The organization's flagship analytics product: hourly/daily CRM capture, curation, pipeline/close snapshots, and governed gold published to the warehouse and Microsoft Fabric.",
+      "role": "Designed, built, and operate end to end",
+      "challenge": "Several ingestion and curation jobs write to overlapping Delta tables concurrently, risking lost updates and write conflicts; downstream consumers were inferring CRM field types, a recurring source of defects.",
+      "solution": "Built the end-to-end pipeline (~two dozen coordinated jobs plus a Lakeflow pipeline). Reworked snapshot/scan reconciliation so reruns converge and four concurrent writers no longer collide. Persisted the CRM's own schema into the catalog as a governed, first-class entity.",
+      "results": [
+        "Go-live July 2026; largest pipeline family in the estate",
+        "Concurrent-writer conflicts and non-idempotent reruns eliminated by design",
+        "Type-inference defects closed at the source by governing CRM metadata in the catalog",
+        "Provider telemetry and a cutover preflight make health observable rather than assumed"
+      ],
+      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Lakeflow / DLT", "Salesforce", "Microsoft Fabric"],
+      "keyTakeaway": "Concurrency correctness beats retry loops—design writes to be idempotent and conflict-free"
+    },
+    {
+      "id": 4,
+      "name": "Config-Driven Ingestion Engine & Serverless Migration",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "In flight",
+      "description": "One invariant interface for reading any source table, with per-source behavior supplied by configuration, feeding a faithful string-typed bronze layer.",
+      "role": "Designed and built the framework; led the serverless migration",
+      "challenge": "Roughly ten source systems across JDBC, REST, SaaS, and file protocols; bespoke ingesters do not scale and drift in quality. Compute was moving to serverless, which removes cluster libraries, init scripts, and parts of the execution API.",
+      "solution": "Built an invariant read_table interface satisfied by thin adapters. Ingestion fails only on infrastructure or connectivity, never on interpretation: merge keys profiled at onboarding, lexical-fidelity checks warn-only. Re-engineered the engine for serverless / Spark Connect with explicit schemas and versioned artifacts.",
+      "results": [
+        "~10 source systems integrated through one engine; a new source is configuration plus a thin adapter",
+        "Full engine running on serverless compute within its restricted execution model",
+        "Data-quality surprises surface as signals instead of outages",
+        "Build-vs-buy policy recorded with testable preconditions"
+      ],
+      "technologiesUsed": ["Databricks", "Spark", "Spark Connect", "Delta", "Unity Catalog", "REST/JDBC/SaaS adapters"],
+      "keyTakeaway": "Separate transport from interpretation; make source variation a matter of configuration against an invariant interface"
+    },
+    {
+      "id": 5,
+      "name": "Model-Driven Curation Engine with Snapshot-Correct Publishing",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "Live in production",
+      "description": "The engine that turns bronze into governed, published gold—letting subject-matter experts author business logic while the platform owns everything irreversible.",
+      "role": "Designed and built the engine and its authoring model",
+      "challenge": "SMEs need to author curation logic but cannot be handed the production publish path. A subtle snapshot bug once let an outage run silently for 18 days, and one non-conforming row could fail an entire dataset's publish.",
+      "solution": "Two authoring front-ends (Excel workbook or raw SQL) over one parameterized engine that generates the publish step. Destination adapters per target. Lifecycle state resolved once per publish, new-breakage detection instead of asserting all history, and quarantine-past-threshold instead of all-or-nothing failure.",
+      "results": [
+        "One engine serving seven published business domains, authored by SMEs without touching production publishing",
+        "Three production incident classes closed by durable design changes, each captured as a decision record",
+        "Retention reimplemented to be serverless-safe"
+      ],
+      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Lakeflow", "Spark SQL", "Excel-driven config"],
+      "keyTakeaway": "Authoring front-ends should be plugins to a generic backend; design for staged, bounded, visible failure"
+    },
+    {
+      "id": 6,
+      "name": "Legacy Data-Warehouse Migration with an Exact-Parity Harness",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "In flight",
+      "description": "Migrating a legacy Azure Synapse warehouse (541 views, 142 stored procedures, 39 pipelines) to the lakehouse with an automated equivalence proof as the acceptance gate.",
+      "role": "Designed and built the migration and the automated parity validation",
+      "challenge": "Financial and project-delivery reporting cannot ship on 'it looks right.' SQL dialect differences (datetime rounding, overflow semantics, implicit coercion) introduce silent numeric divergence a spot check will not catch.",
+      "solution": "Inventoried the legacy estate as a frozen reference. Built a harness that freezes inputs, runs legacy and migrated logic, and compares results as an exact multiset plus per-column hashes, normalizing each named dialect trap explicitly.",
+      "results": [
+        "Migrated models validated row-for-row and column-for-column as a repeatable pass/fail gate",
+        "Finance and project-delivery gold published from the lakehouse to the BI surface",
+        "Legacy export paths retired as domains clear parity"
+      ],
+      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Spark SQL", "Azure Synapse", "Microsoft Fabric"],
+      "keyTakeaway": "For any migration touching reported numbers, build the equivalence proof first and make it the gate"
+    },
+    {
+      "id": 7,
+      "name": "Platform Observability & Run-Health Model",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "Completed",
+      "description": "A common telemetry spine across ingestion, curation, and publication, with a sharp split between a run's outcome and whether its errors were even recorded.",
+      "role": "Designed the telemetry model and the run-health contract",
+      "challenge": "Run health was read off a single platform status that reported 'succeeded with failures' as success, so real failures hid behind green check marks and telemetry could not be joined across layers.",
+      "solution": "Defined a 6-column telemetry spine emitted by every layer into per-concern internal catalogs. Separated 'run outcome' from 'failure recorded' as distinct decisions. Established the contract before the verdict taxonomy. Built operational dashboards and set detect-and-alert versus fail-hard policy.",
+      "results": [
+        "146 silent exception handlers surfaced for remediation",
+        "Joinable cross-layer telemetry replacing non-comparable per-job status",
+        "Live run-health dashboards across the estate; alerting on by default in deploy tooling"
+      ],
+      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Lakeview dashboards"],
+      "keyTakeaway": "'Did it succeed?' and 'was the error recorded?' are different questions—collapsing them is how a platform lies with green status"
+    },
+    {
+      "id": 8,
+      "name": "Data Platform Architecture & Decision-Governance System",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "Ongoing",
+      "description": "The governance backbone a multi-engine platform needs to be operated by a growing team rather than held in one person's head.",
+      "role": "Sole platform architect; authored the decision-record system and architecture docs",
+      "challenge": "Fast solo delivery leaves decisions undocumented, unauditable, and drifting from what is actually running. As junior engineers began onboarding, that gap became the binding constraint on scaling the team.",
+      "solution": "Stood up a versioned store of architecture decision records organized by taxonomy, each with rejected alternatives and a falsification condition. Added a findings register, RCA records, program ledgers, a per-service registry, and a layered architecture-doc set with validated diagrams. Codified the dev→qc→prod promotion and operating model.",
+      "results": [
+        "~300 decision records under version control, cited across ~20 repos",
+        "Decisions carry their own 'revisit when X' triggers instead of rotting silently",
+        "Platform documented well enough to onboard engineers against"
+      ],
+      "technologiesUsed": ["Databricks", "Unity Catalog", "git", "Markdown / Mermaid", "Databricks Asset Bundles"],
+      "keyTakeaway": "Governance is what lets a high-velocity solo platform become a team platform—it is architecture work, not paperwork"
+    },
+    {
+      "id": 9,
+      "name": "Geospatial Data Pipeline — End-to-End Lakehouse Delivery",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "May 2026",
+      "endDate": "v1.0.0 Jul 2026",
+      "description": "A monitored, source-controlled flow from two upstream providers into a governed lakehouse and downstream BI and GIS surfaces, shipped as a tagged release.",
+      "role": "Designed, built, and shipped end to end",
+      "challenge": "The domain's one downstream dataset was refreshed by a manual notebook that had silently stopped running; consumers were looking at weeks-old data. Only one of ~26 production jobs had any failure alerting.",
+      "solution": "Two independent publish packages for two refresh cadences, a dual-surface schema convention, consumer-oriented analytics workspaces, tag-pinned shared adapter code, and a CI/CD backbone (validation, gated deploy, secret scan) on GitHub Actions with workload identity federation.",
+      "results": [
+        "~125K and ~86K rows landing in both the lakehouse and the BI/GIS surfaces on dependable cadences",
+        "Shipped as v1.0.0—merged, tagged, released with close-out docs",
+        "Incident fix generalized into alerting-on-by-default across the estate"
+      ],
+      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Microsoft Fabric", "OneLake", "ArcGIS Online", "GitHub Actions"],
+      "keyTakeaway": "Wrap every manual step as a monitored job; alerting belongs in the deploy template, not as a per-job afterthought"
+    },
+    {
+      "id": 10,
+      "name": "Unified LLM Access Plane & Governed AI-Agent Access",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "Design accepted; build pending",
+      "description": "Consolidating programmatic AI usage onto a platform-native, version-pinned LLM gateway, plus an MCP service that gives AI agents a narrow, governed way to query the lakehouse.",
+      "role": "Architected the cutover and authored the decision records",
+      "challenge": "AI traffic reached LLMs through a second cloud control plane outside the platform's governance. AI payloads can contain sensitive data, and the platform's automation identity is powerful enough to reconfigure most guardrails, so catalog permissions alone are not a defensible boundary.",
+      "solution": "Version-pinned gateway endpoints behind an OpenAI-compatible contract with gated vendor fallback; environment-by-environment cutover with per-client canaries and a rollback target; sensitive telemetry contained behind a private-endpoint-only network boundary with a redacting curator. MCP service exposes a small set of purpose-built Unity Catalog functions.",
+      "results": [
+        "End-to-end migration architected with parity gates and rollback; blockers named as hard preconditions",
+        "Privacy posture that holds against an over-privileged automation identity",
+        "Governed bridge between AI tooling and the lakehouse without surrendering control of the data surface"
+      ],
+      "technologiesUsed": ["Databricks", "Unity Catalog", "OpenAI-compatible API", "Model Context Protocol", "Private networking"],
+      "keyTakeaway": "If the actor you are guarding against can reconfigure the guardrail, it is not a boundary—layer network and identity isolation beneath catalog permissions"
+    },
+    {
+      "id": 11,
+      "name": "Platform Adapter Layer & Integration Coordinate Registry",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "In flight",
+      "description": "Replacing copy-pasted integration code with a single versioned core library and a registry that pins external-system addresses by logical name.",
+      "role": "Designed the architecture and authored the decision records",
+      "challenge": "A JSON-parsing routine cloned four times drifted and silently corrupted ~107K cells. Pipelines addressed collaboration-platform resources by display name, so an upstream rename could quietly re-point a read or write.",
+      "solution": "Extracted non-optional primitives into an adapter-core library with thin repo-per-adapter on top; distributed as versioned wheels on a governed catalog volume so it installs on serverless compute. Unified three duplicate Graph clients. Built a coordinate registry keyed by logical name and environment.",
+      "results": [
+        "The corrupting duplication class designed out: one authoritative, versioned implementation per primitive",
+        "Address-by-identifier replaces address-by-display-name across integrations",
+        "Decisions accepted and core library live; adapter migration underway"
+      ],
+      "technologiesUsed": ["Databricks", "Unity Catalog", "Python wheels", "SharePoint / Graph API", "git"],
+      "keyTakeaway": "Pin versions and addresses by stable identity, not by human-readable name"
+    },
+    {
+      "id": 12,
+      "name": "SQL Server Lift-and-Shift with a Weighted Verification Battery",
+      "client": "Large Infrastructure Engineering & Program Management Firm",
+      "startDate": "2026",
+      "endDate": "Completed",
+      "description": "Moving a line-of-business database from SQL Server 2016 to 2019 with evidence that the new instance matches the old one.",
+      "role": "Designed and built the verification and provisioning automation",
+      "challenge": "The migration risk is not the data copy but the surround: logins, roles, and user mappings that do not come across cleanly, and reporting services that must be stood up again.",
+      "solution": "Parameterized, weighted verification battery producing a score and a diff; explicit login/role/mapping parity capture; scripted SSRS provisioning; all reusable for the next instance.",
+      "results": [
+        "Migration shipped on a weighted verification result and a parity report",
+        "Security principals verified across the move",
+        "Reporting tier provisioned by automation"
+      ],
+      "technologiesUsed": ["SQL Server 2016 → 2019", "SSRS", "T-SQL", "PowerShell"],
+      "keyTakeaway": "A weighted, parameterized verification battery turns 'trust me, it migrated' into a score and a diff"
+    },
+    {
+      "id": 13,
       "name": "Data Vault 2.0 Enterprise Implementation",
       "client": "Trimble, Inc.",
       "startDate": "2022",
       "endDate": "2025",
-      "description": "Consolidated 5+ enterprise information systems into unified source of truth.",
+      "description": "Consolidated 5+ enterprise information systems into unified source of truth for construction technology company's MEP division.",
       "role": "Data Engineer & Architect",
-      "challenge": "Construction technology company needed to consolidate multiple enterprise systems with complex historical tracking requirements.",
-      "solution": "Architected and implemented enterprise Data Vault 2.0 with hub, satellite, and link structures. Built production pipelines with monitoring framework.",
+      "challenge": "Global construction technology company needed to consolidate multiple enterprise systems (project, cost, workforce) with complex historical tracking requirements.",
+      "solution": "Architected and implemented enterprise Data Vault 2.0 with hub, satellite, and link structures for historized reporting. Built production pipelines on Azure Data Factory and Databricks Workflows with monitoring and reliability framework.",
       "results": [
         "Unified source of truth across 5+ systems",
-        "Enterprise data quality management with automated profiling",
+        "Enterprise data quality management with automated profiling and rule validation",
         "Reliable pipeline framework with comprehensive monitoring"
       ],
-      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows"],
+      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows", "Azure Function Apps"],
       "keyTakeaway": "DV 2.0 provides scalable architecture for complex multi-source integrations"
+    },
+    {
+      "id": 14,
+      "name": "Cloud Infrastructure Migration & Modernization",
+      "client": "Bookbyte",
+      "startDate": "2020",
+      "endDate": "2022",
+      "description": "Full cloud migration of on-premises infrastructure; ERP data integration architecture.",
+      "role": "Associate Director of Enterprise Data",
+      "challenge": "On-premises infrastructure not scalable; needed modern cloud ERP integration with Acumatica and Snowflake.",
+      "solution": "Led full migration to Azure and AWS. Designed Celigo iPaaS transformation flows for ERP data normalization. Built SnowPipe ingestion pipelines from multiple external sources. Authored comprehensive BCP/DRP and governance policies.",
+      "results": [
+        "Successfully migrated to cloud platforms",
+        "Automated SnowPipe-based ingestion from multiple sources",
+        "Comprehensive disaster recovery and business continuity planning",
+        "Enterprise security and governance policies established"
+      ],
+      "technologiesUsed": ["Snowflake", "SnowPipe", "Azure", "AWS", "Celigo", "Acumatica"],
+      "keyTakeaway": "Strategic cloud platform selection enables long-term agility"
+    },
+    {
+      "id": 15,
+      "name": "Legacy System Migrations (Insurance, Legal, Government)",
+      "client": "Multiple Clients",
+      "startDate": "2015",
+      "endDate": "2020",
+      "description": "12+ legacy system migrations to modern cloud SaaS/PaaS platforms.",
+      "role": "Principal Consultant",
+      "challenge": "Organizations dependent on aging legacy systems (LegalKey, Trim, RecFind) unable to scale or adapt.",
+      "solution": "Architected migrations to modern cloud platforms with minimal disruption. Designed dynamic data ingestion platform with automated schema profiling and extraction strategy optimization.",
+      "results": [
+        "12+ successful migrations to cloud SaaS/PaaS",
+        "Automated schema profiling reducing migration effort",
+        "Organizations able to leverage modern platform capabilities"
+      ],
+      "technologiesUsed": ["SQL Server", "Oracle", "Cloud platforms", "Schema profiling"],
+      "keyTakeaway": "Thoughtful migration strategy unlocks organization agility"
     }
   ],
+
   "certifications": [
-    {"name": "Microsoft Azure AI Fundamentals", "issuer": "Microsoft", "year": 2025},
-    {"name": "Azure Security Fundamentals", "issuer": "Microsoft", "year": 2025},
-    {"name": "Azure Data Engineer Associate", "issuer": "Microsoft", "year": 2024},
-    {"name": "Azure Data Fundamentals", "issuer": "Microsoft", "year": 2024},
-    {"name": "Azure Fundamentals", "issuer": "Microsoft", "year": 2024},
-    {"name": "Architecting Distributed Cloud Applications in Azure", "issuer": "Microsoft", "year": 2023},
-    {"name": "Implementing Data Solutions in Azure SQL", "issuer": "Microsoft", "year": 2023},
-    {"name": "Principles of Statistics", "issuer": "Coursera", "year": 2022}
+    {
+      "name": "Microsoft Azure AI Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2025
+    },
+    {
+      "name": "Azure Security Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2025
+    },
+    {
+      "name": "Azure Data Engineer Associate",
+      "issuer": "Microsoft",
+      "year": 2024
+    },
+    {
+      "name": "Azure Data Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2024
+    },
+    {
+      "name": "Azure Fundamentals",
+      "issuer": "Microsoft",
+      "year": 2024
+    },
+    {
+      "name": "Architecting Distributed Cloud Applications in Azure",
+      "issuer": "Microsoft",
+      "year": 2023
+    },
+    {
+      "name": "Implementing Data Solutions in Azure SQL",
+      "issuer": "Microsoft",
+      "year": 2023
+    },
+    {
+      "name": "Principles of Statistics",
+      "issuer": "Coursera",
+      "year": 2022
+    }
   ],
+
   "industryExperience": [
+    "Infrastructure Engineering & Program Management",
     "Construction Technology",
     "Hospitality & Hotels",
     "Retail & E-commerce",
@@ -837,6 +1125,7 @@
     "Government",
     "Insurance"
   ],
+
   "keywords": [
     "Senior Data Engineer",
     "Data Architect",
@@ -844,8 +1133,11 @@
     "Unity Catalog",
     "Delta Lake",
     "Delta Live Tables",
+    "Lakeflow",
     "Databricks Workflows",
     "Databricks Asset Bundles",
+    "Serverless Compute",
+    "Spark Connect",
     "Data Vault 2.0",
     "Medallion Architecture",
     "dbt",
@@ -854,21 +1146,40 @@
     "ETL",
     "ELT",
     "Azure Data Factory",
+    "Azure Data Lake Storage",
+    "Azure Synapse",
+    "Microsoft Fabric",
+    "OneLake",
     "Snowflake",
     "SnowPipe",
     "Kafka",
     "REST API",
     "OAuth 2.0",
+    "Managed Identity",
     "Python",
     "SQL",
     "T-SQL",
+    "Oracle PL/SQL",
     "Microsoft Azure",
     "AWS",
+    "Azure DevOps",
+    "GitHub Actions",
     "Data Governance",
     "Microsoft Purview",
     "Master Data Management",
+    "Dimensional Modeling",
     "Lakehouse Architecture",
-    "Oracle EBS"
+    "Architecture Decision Records",
+    "Observability",
+    "Salesforce Integration",
+    "Oracle EBS",
+    "Deltek Vision",
+    "SharePoint",
+    "Microsoft Graph API",
+    "ArcGIS Online",
+    "Model Context Protocol (MCP)",
+    "AI Gateway",
+    "Claude Code"
   ]
 };
 
