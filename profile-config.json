@@ -9,47 +9,119 @@
     "yearsExperience": 15,
     "keyTechnologies": "Azure Lakehouse · Databricks · Unity Catalog · Data Vault 2.0"
   },
-
   "professionalSummary": "Proven track record of implementing architecture that works beyond the engagement: systems that survive ownership changes, platforms that junior developers can maintain, and pipelines that don't require the original architect to debug. Three engagement models: embedded principal engineer for organizations without a functioning data team; greenfield or turnaround platform architecture and implementation; and retained fractional architect post-build.",
-
   "keyAchievement": {
     "title": "Flagship Long-Term Impact",
     "description": "In 2012, architected a sample tracking and regulatory reporting system for AMPAC on Microsoft Azure—then still an early-stage platform. Fourteen years later, through multiple subsequent divestitures and ownership changes, that organization is still running and has credited the Azure decision with their ability to maintain operational independence. That engagement remains active."
   },
-
   "coreCompetencies": {
     "architecture": {
       "category": "Architecture",
       "proficiency": 5,
-      "skills": ["Domain-Driven Lakehouse", "Unity Catalog", "Medallion Architecture", "Data Vault 2.0", "Provider-Based Integration Frameworks", "Producer/Consumer Contract Model", "Multi-Environment Platform Design", "Dimensional & Relational Modeling", "Architecture Decision Records (ADRs)"]
+      "skills": [
+        "Domain-Driven Lakehouse",
+        "Unity Catalog",
+        "Medallion Architecture",
+        "Data Vault 2.0",
+        "Provider-Based Integration Frameworks",
+        "Producer/Consumer Contract Model",
+        "Multi-Environment Platform Design",
+        "Dimensional & Relational Modeling",
+        "Architecture Decision Records (ADRs)"
+      ]
     },
     "dataPlatforms": {
       "category": "Data Platforms",
       "proficiency": 5,
-      "skills": ["Databricks", "Delta Lake", "Lakeflow / Delta Live Tables", "Unity Catalog Volumes", "Microsoft Fabric", "OneLake", "Azure Synapse", "Snowflake", "Redshift", "Azure SQL", "MS SQL Server", "Oracle 11g", "PostgreSQL", "MySQL", "MariaDB", "MongoDB", "DynamoDB"]
+      "skills": [
+        "Databricks",
+        "Delta Lake",
+        "Lakeflow / Delta Live Tables",
+        "Unity Catalog Volumes",
+        "Microsoft Fabric",
+        "OneLake",
+        "Azure Synapse",
+        "Snowflake",
+        "Redshift",
+        "Azure SQL",
+        "MS SQL Server",
+        "Oracle 11g",
+        "PostgreSQL",
+        "MySQL",
+        "MariaDB",
+        "MongoDB",
+        "DynamoDB"
+      ]
     },
     "dataEngineering": {
       "category": "Data Engineering",
       "proficiency": 5,
-      "skills": ["ETL/ELT", "Batch & Streaming Pipelines", "Databricks Workflows", "Serverless Compute", "Apache Spark", "Spark Connect", "PySpark", "Azure Data Factory", "ADLS", "SnowPipe", "Kafka", "dbt", "Data Governance", "Microsoft Purview", "Observability & Telemetry Design", "Data-Parity Validation"]
+      "skills": [
+        "ETL/ELT",
+        "Batch & Streaming Pipelines",
+        "Databricks Workflows",
+        "Serverless Compute",
+        "Apache Spark",
+        "Spark Connect",
+        "PySpark",
+        "Azure Data Factory",
+        "ADLS",
+        "SnowPipe",
+        "Kafka",
+        "dbt",
+        "Data Governance",
+        "Microsoft Purview",
+        "Observability & Telemetry Design",
+        "Data-Parity Validation"
+      ]
     },
     "cloudDevOps": {
       "category": "Cloud & DevOps",
       "proficiency": 5,
-      "skills": ["Microsoft Azure (enterprise adopter since 2012)", "AWS", "Azure DevOps", "GitHub Actions CI/CD", "Databricks Asset Bundles", "Delta Sharing", "Confluent Cloud", "REST API", "OAuth 2.0", "Workload Identity Federation / Managed Identity", "Salesforce Sales API", "Microsoft Graph API"]
+      "skills": [
+        "Microsoft Azure (enterprise adopter since 2012)",
+        "AWS",
+        "Azure DevOps",
+        "GitHub Actions CI/CD",
+        "Databricks Asset Bundles",
+        "Delta Sharing",
+        "Confluent Cloud",
+        "REST API",
+        "OAuth 2.0",
+        "Workload Identity Federation / Managed Identity",
+        "Salesforce Sales API",
+        "Microsoft Graph API"
+      ]
     },
     "languages": {
       "category": "Languages",
       "proficiency": 5,
-      "skills": ["Python", "SQL", "Spark SQL", "T-SQL", "Oracle PL/SQL", "PowerShell", "C#.NET", "JavaScript", "VB.NET/VBA"]
+      "skills": [
+        "Python",
+        "SQL",
+        "Spark SQL",
+        "T-SQL",
+        "Oracle PL/SQL",
+        "PowerShell",
+        "C#.NET",
+        "JavaScript",
+        "VB.NET/VBA"
+      ]
     },
     "aiAssisted": {
       "category": "AI-Assisted Development",
       "proficiency": 5,
-      "skills": ["Claude Code", "ChatGPT", "GitHub Copilot", "AI as execution layer for architecture-driven delivery (one engineer sustaining ~300 ADRs across ~20 repos)", "MCP service for governed AI-agent data access", "Unified LLM access plane (AI gateway) design", "Shared skills/agents library for platform operations"]
+      "skills": [
+        "Claude Code",
+        "ChatGPT",
+        "GitHub Copilot",
+        "AI as execution layer for architecture-driven delivery (one engineer sustaining ~300 ADRs across ~20 repos)",
+        "MCP service for governed AI-agent data access",
+        "Unified LLM access plane (AI gateway) design",
+        "Shared skills/agents library for platform operations"
+      ]
     }
   },
-
   "workExperience": [
     {
       "id": 1,
@@ -70,7 +142,19 @@
         "Shipped geospatial pipeline v1.0.0 (two providers → lakehouse, Microsoft Fabric, and ArcGIS Online) with reusable GitHub Actions CI/CD and workload identity federation; built an MCP service exposing governed Unity Catalog functions to AI agents; architected a unified LLM access plane (AI gateway) with network-first telemetry containment",
         "Hardened identity and shared infrastructure: platform persona model, workspace secret scanning, and credential convergence to federated managed identity; shared adapter-core library distributed as versioned wheels on governed volumes, with a coordinate registry pinning external resources by stable ID"
       ],
-      "technologiesUsed": ["Databricks", "Unity Catalog", "Lakeflow", "Serverless / Spark Connect", "Microsoft Fabric", "Azure Synapse", "Oracle EBS/HCM", "Salesforce", "SharePoint / Graph API", "GitHub Actions", "MCP"]
+      "technologiesUsed": [
+        "Databricks",
+        "Unity Catalog",
+        "Lakeflow",
+        "Serverless / Spark Connect",
+        "Microsoft Fabric",
+        "Azure Synapse",
+        "Oracle EBS/HCM",
+        "Salesforce",
+        "SharePoint / Graph API",
+        "GitHub Actions",
+        "MCP"
+      ]
     },
     {
       "id": 2,
@@ -87,7 +171,12 @@
         "Established monitoring and pipeline reliability framework",
         "Developed enterprise data quality management framework with automated profiling and rule validation"
       ],
-      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows", "Azure Function Apps"]
+      "technologiesUsed": [
+        "Data Vault 2.0",
+        "Azure Data Factory",
+        "Databricks Workflows",
+        "Azure Function Apps"
+      ]
     },
     {
       "id": 3,
@@ -102,7 +191,11 @@
         "Designed data models covering accounting, guest profiles, and hotel operations on SkyTouch cloud-based property management system",
         "Led 8+ junior developers through schema navigation, data validation planning, and quality checkpoints"
       ],
-      "technologiesUsed": ["SkyTouch", "SQL Server", "Data Modeling"]
+      "technologiesUsed": [
+        "SkyTouch",
+        "SQL Server",
+        "Data Modeling"
+      ]
     },
     {
       "id": 4,
@@ -121,7 +214,14 @@
         "Designed Celigo iPaaS transformation flows for normalized ERP data loads",
         "Built SnowPipe-based ingestion pipelines from multiple external sources"
       ],
-      "technologiesUsed": ["Snowflake", "SnowPipe", "Azure", "AWS", "Celigo", "Acumatica"]
+      "technologiesUsed": [
+        "Snowflake",
+        "SnowPipe",
+        "Azure",
+        "AWS",
+        "Celigo",
+        "Acumatica"
+      ]
     },
     {
       "id": 5,
@@ -137,7 +237,11 @@
         "12+ legacy system migrations for insurance, legal, and government clients (LegalKey, Trim, RecFind) to modern cloud SaaS/PaaS platforms",
         "Architected dynamic data ingestion platform for SQL Server and Oracle sources with automated schema profiling and extraction strategy optimization"
       ],
-      "technologiesUsed": ["SQL Server", "Oracle", "Cloud platforms"]
+      "technologiesUsed": [
+        "SQL Server",
+        "Oracle",
+        "Cloud platforms"
+      ]
     },
     {
       "id": 6,
@@ -155,7 +259,11 @@
         "Continues to maintain and extend the platform; supporting operational analytics and compliance reporting workflows",
         "Strong reference available from client leadership"
       ],
-      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"],
+      "technologiesUsed": [
+        "Microsoft Azure",
+        "SQL Server",
+        "SSIS"
+      ],
       "isLongstanding": true
     },
     {
@@ -176,10 +284,14 @@
         "At 2012 divestiture, recommended Azure to newly independent subdivision and secured the consulting agreement",
         "Built Oracle eBusiness Suite extensions and custom reports; developed SharePoint solutions for change tracking, patent management, and project delivery"
       ],
-      "technologiesUsed": ["Oracle eBusiness Suite", "SQL Server", "SSIS", "SharePoint"]
+      "technologiesUsed": [
+        "Oracle eBusiness Suite",
+        "SQL Server",
+        "SSIS",
+        "SharePoint"
+      ]
     }
   ],
-
   "portfolioProjects": [
     {
       "id": 1,
@@ -198,7 +310,11 @@
         "System still active with ongoing maintenance and enhancements",
         "Operational analytics and compliance reporting workflows remain core to operations"
       ],
-      "technologiesUsed": ["Microsoft Azure", "SQL Server", "SSIS"],
+      "technologiesUsed": [
+        "Microsoft Azure",
+        "SQL Server",
+        "SSIS"
+      ],
       "keyTakeaway": "Proof that thoughtful architecture decisions deliver lasting value beyond initial engagement"
     },
     {
@@ -217,7 +333,15 @@
         "Junior engineers now onboarding against documented architecture (~300 ADRs) rather than tribal knowledge",
         "Platform positioned for long-term maintainability and scalability"
       ],
-      "technologiesUsed": ["Databricks", "Unity Catalog", "Delta Lake", "Lakeflow", "Databricks Asset Bundles", "Delta Sharing", "Microsoft Fabric"],
+      "technologiesUsed": [
+        "Databricks",
+        "Unity Catalog",
+        "Delta Lake",
+        "Lakeflow",
+        "Databricks Asset Bundles",
+        "Delta Sharing",
+        "Microsoft Fabric"
+      ],
       "keyTakeaway": "Configuration-driven engines plus written decisions enable knowledge transfer and long-term platform ownership"
     },
     {
@@ -236,7 +360,14 @@
         "Type-inference defects closed at the source by governing CRM metadata in the catalog",
         "Provider telemetry and a cutover preflight make health observable rather than assumed"
       ],
-      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Lakeflow / DLT", "Salesforce", "Microsoft Fabric"],
+      "technologiesUsed": [
+        "Databricks",
+        "Delta",
+        "Unity Catalog",
+        "Lakeflow / DLT",
+        "Salesforce",
+        "Microsoft Fabric"
+      ],
       "keyTakeaway": "Concurrency correctness beats retry loops—design writes to be idempotent and conflict-free"
     },
     {
@@ -255,7 +386,14 @@
         "Data-quality surprises surface as signals instead of outages",
         "Build-vs-buy policy recorded with testable preconditions"
       ],
-      "technologiesUsed": ["Databricks", "Spark", "Spark Connect", "Delta", "Unity Catalog", "REST/JDBC/SaaS adapters"],
+      "technologiesUsed": [
+        "Databricks",
+        "Spark",
+        "Spark Connect",
+        "Delta",
+        "Unity Catalog",
+        "REST/JDBC/SaaS adapters"
+      ],
       "keyTakeaway": "Separate transport from interpretation; make source variation a matter of configuration against an invariant interface"
     },
     {
@@ -273,7 +411,14 @@
         "Three production incident classes closed by durable design changes, each captured as a decision record",
         "Retention reimplemented to be serverless-safe"
       ],
-      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Lakeflow", "Spark SQL", "Excel-driven config"],
+      "technologiesUsed": [
+        "Databricks",
+        "Delta",
+        "Unity Catalog",
+        "Lakeflow",
+        "Spark SQL",
+        "Excel-driven config"
+      ],
       "keyTakeaway": "Authoring front-ends should be plugins to a generic backend; design for staged, bounded, visible failure"
     },
     {
@@ -291,7 +436,14 @@
         "Finance and project-delivery gold published from the lakehouse to the BI surface",
         "Legacy export paths retired as domains clear parity"
       ],
-      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Spark SQL", "Azure Synapse", "Microsoft Fabric"],
+      "technologiesUsed": [
+        "Databricks",
+        "Delta",
+        "Unity Catalog",
+        "Spark SQL",
+        "Azure Synapse",
+        "Microsoft Fabric"
+      ],
       "keyTakeaway": "For any migration touching reported numbers, build the equivalence proof first and make it the gate"
     },
     {
@@ -309,7 +461,12 @@
         "Joinable cross-layer telemetry replacing non-comparable per-job status",
         "Live run-health dashboards across the estate; alerting on by default in deploy tooling"
       ],
-      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Lakeview dashboards"],
+      "technologiesUsed": [
+        "Databricks",
+        "Delta",
+        "Unity Catalog",
+        "Lakeview dashboards"
+      ],
       "keyTakeaway": "'Did it succeed?' and 'was the error recorded?' are different questions—collapsing them is how a platform lies with green status"
     },
     {
@@ -327,7 +484,13 @@
         "Decisions carry their own 'revisit when X' triggers instead of rotting silently",
         "Platform documented well enough to onboard engineers against"
       ],
-      "technologiesUsed": ["Databricks", "Unity Catalog", "git", "Markdown / Mermaid", "Databricks Asset Bundles"],
+      "technologiesUsed": [
+        "Databricks",
+        "Unity Catalog",
+        "git",
+        "Markdown / Mermaid",
+        "Databricks Asset Bundles"
+      ],
       "keyTakeaway": "Governance is what lets a high-velocity solo platform become a team platform—it is architecture work, not paperwork"
     },
     {
@@ -345,7 +508,15 @@
         "Shipped as v1.0.0—merged, tagged, released with close-out docs",
         "Incident fix generalized into alerting-on-by-default across the estate"
       ],
-      "technologiesUsed": ["Databricks", "Delta", "Unity Catalog", "Microsoft Fabric", "OneLake", "ArcGIS Online", "GitHub Actions"],
+      "technologiesUsed": [
+        "Databricks",
+        "Delta",
+        "Unity Catalog",
+        "Microsoft Fabric",
+        "OneLake",
+        "ArcGIS Online",
+        "GitHub Actions"
+      ],
       "keyTakeaway": "Wrap every manual step as a monitored job; alerting belongs in the deploy template, not as a per-job afterthought"
     },
     {
@@ -363,7 +534,13 @@
         "Privacy posture that holds against an over-privileged automation identity",
         "Governed bridge between AI tooling and the lakehouse without surrendering control of the data surface"
       ],
-      "technologiesUsed": ["Databricks", "Unity Catalog", "OpenAI-compatible API", "Model Context Protocol", "Private networking"],
+      "technologiesUsed": [
+        "Databricks",
+        "Unity Catalog",
+        "OpenAI-compatible API",
+        "Model Context Protocol",
+        "Private networking"
+      ],
       "keyTakeaway": "If the actor you are guarding against can reconfigure the guardrail, it is not a boundary—layer network and identity isolation beneath catalog permissions"
     },
     {
@@ -381,7 +558,13 @@
         "Address-by-identifier replaces address-by-display-name across integrations",
         "Decisions accepted and core library live; adapter migration underway"
       ],
-      "technologiesUsed": ["Databricks", "Unity Catalog", "Python wheels", "SharePoint / Graph API", "git"],
+      "technologiesUsed": [
+        "Databricks",
+        "Unity Catalog",
+        "Python wheels",
+        "SharePoint / Graph API",
+        "git"
+      ],
       "keyTakeaway": "Pin versions and addresses by stable identity, not by human-readable name"
     },
     {
@@ -399,7 +582,12 @@
         "Security principals verified across the move",
         "Reporting tier provisioned by automation"
       ],
-      "technologiesUsed": ["SQL Server 2016 → 2019", "SSRS", "T-SQL", "PowerShell"],
+      "technologiesUsed": [
+        "SQL Server 2016 → 2019",
+        "SSRS",
+        "T-SQL",
+        "PowerShell"
+      ],
       "keyTakeaway": "A weighted, parameterized verification battery turns 'trust me, it migrated' into a score and a diff"
     },
     {
@@ -417,7 +605,12 @@
         "Enterprise data quality management with automated profiling and rule validation",
         "Reliable pipeline framework with comprehensive monitoring"
       ],
-      "technologiesUsed": ["Data Vault 2.0", "Azure Data Factory", "Databricks Workflows", "Azure Function Apps"],
+      "technologiesUsed": [
+        "Data Vault 2.0",
+        "Azure Data Factory",
+        "Databricks Workflows",
+        "Azure Function Apps"
+      ],
       "keyTakeaway": "DV 2.0 provides scalable architecture for complex multi-source integrations"
     },
     {
@@ -436,7 +629,14 @@
         "Comprehensive disaster recovery and business continuity planning",
         "Enterprise security and governance policies established"
       ],
-      "technologiesUsed": ["Snowflake", "SnowPipe", "Azure", "AWS", "Celigo", "Acumatica"],
+      "technologiesUsed": [
+        "Snowflake",
+        "SnowPipe",
+        "Azure",
+        "AWS",
+        "Celigo",
+        "Acumatica"
+      ],
       "keyTakeaway": "Strategic cloud platform selection enables long-term agility"
     },
     {
@@ -454,14 +654,68 @@
         "Automated schema profiling reducing migration effort",
         "Organizations able to leverage modern platform capabilities"
       ],
-      "technologiesUsed": ["SQL Server", "Oracle", "Cloud platforms", "Schema profiling"],
+      "technologiesUsed": [
+        "SQL Server",
+        "Oracle",
+        "Cloud platforms",
+        "Schema profiling"
+      ],
       "keyTakeaway": "Thoughtful migration strategy unlocks organization agility"
     }
   ],
-
   "certifications": [
     {
-      "name": "Microsoft Azure AI Fundamentals",
+      "name": "Azure Databricks Platform Architect",
+      "issuer": "Databricks",
+      "year": 2026
+    },
+    {
+      "name": "AI Agent Fundamentals",
+      "issuer": "Databricks",
+      "year": 2026
+    },
+    {
+      "name": "Generative AI Fundamentals",
+      "issuer": "Databricks",
+      "year": 2026
+    },
+    {
+      "name": "AI Security Fundamentals",
+      "issuer": "Databricks",
+      "year": 2026
+    },
+    {
+      "name": "Lakehouse Architecture Fundamentals",
+      "issuer": "Databricks",
+      "year": 2026
+    },
+    {
+      "name": "Data Governance on Databricks Knowledge Badge",
+      "issuer": "Databricks",
+      "year": 2026
+    },
+    {
+      "name": "Databricks Fundamentals",
+      "issuer": "Databricks",
+      "year": 2025
+    },
+    {
+      "name": "Claude Code 101",
+      "issuer": "Anthropic Claude Academy",
+      "year": 2026
+    },
+    {
+      "name": "Claude 101",
+      "issuer": "Anthropic Claude Academy",
+      "year": 2026
+    },
+    {
+      "name": "AI Fluency: Framework and Foundations",
+      "issuer": "Anthropic Claude Academy",
+      "year": 2026
+    },
+    {
+      "name": "Azure AI Fundamentals",
       "issuer": "Microsoft",
       "year": 2025
     },
@@ -501,7 +755,6 @@
       "year": 2022
     }
   ],
-
   "industryExperience": [
     "Infrastructure Engineering & Program Management",
     "Construction Technology",
@@ -513,60 +766,64 @@
     "Government",
     "Insurance"
   ],
-
   "keywords": [
-    "Senior Data Engineer",
-    "Data Architect",
-    "Azure Databricks",
-    "Unity Catalog",
-    "Delta Lake",
-    "Delta Live Tables",
-    "Lakeflow",
-    "Databricks Workflows",
-    "Databricks Asset Bundles",
-    "Serverless Compute",
-    "Spark Connect",
-    "Data Vault 2.0",
-    "Medallion Architecture",
-    "dbt",
+    "AI Agents",
+    "AI Gateway",
+    "AI Security",
     "Apache Spark",
-    "PySpark",
-    "ETL",
-    "ELT",
+    "ArcGIS Online",
+    "Architecture Decision Records",
+    "AWS",
     "Azure Data Factory",
     "Azure Data Lake Storage",
+    "Azure Databricks",
+    "Azure DevOps",
     "Azure Synapse",
+    "Claude Code",
+    "Data Architect",
+    "Data Governance",
+    "Data Vault 2.0",
+    "Databricks Asset Bundles",
+    "Databricks Platform Architect",
+    "Databricks Workflows",
+    "dbt",
+    "Delta Lake",
+    "Delta Live Tables",
+    "Deltek Vision",
+    "Dimensional Modeling",
+    "ELT",
+    "ETL",
+    "Generative AI",
+    "GitHub Actions",
+    "Kafka",
+    "Lakeflow",
+    "Lakehouse Architecture",
+    "Lakehouse Fundamentals",
+    "Managed Identity",
+    "Master Data Management",
+    "Medallion Architecture",
+    "Microsoft Azure",
     "Microsoft Fabric",
+    "Microsoft Graph API",
+    "Microsoft Purview",
+    "Model Context Protocol (MCP)",
+    "OAuth 2.0",
+    "Observability",
     "OneLake",
+    "Oracle EBS",
+    "Oracle PL/SQL",
+    "PySpark",
+    "Python",
+    "REST API",
+    "Salesforce Integration",
+    "Senior Data Engineer",
+    "Serverless Compute",
+    "SharePoint",
     "Snowflake",
     "SnowPipe",
-    "Kafka",
-    "REST API",
-    "OAuth 2.0",
-    "Managed Identity",
-    "Python",
+    "Spark Connect",
     "SQL",
     "T-SQL",
-    "Oracle PL/SQL",
-    "Microsoft Azure",
-    "AWS",
-    "Azure DevOps",
-    "GitHub Actions",
-    "Data Governance",
-    "Microsoft Purview",
-    "Master Data Management",
-    "Dimensional Modeling",
-    "Lakehouse Architecture",
-    "Architecture Decision Records",
-    "Observability",
-    "Salesforce Integration",
-    "Oracle EBS",
-    "Deltek Vision",
-    "SharePoint",
-    "Microsoft Graph API",
-    "ArcGIS Online",
-    "Model Context Protocol (MCP)",
-    "AI Gateway",
-    "Claude Code"
+    "Unity Catalog"
   ]
 }
