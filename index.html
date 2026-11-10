@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consult Data Li - Data Engineer & Platform Architect</title>
+    <title>Li Hernandez - Data Engineer & Platform Architect</title>
     <style>
         * {
             margin: 0;
@@ -538,13 +538,13 @@
 <body>
     <header>
         <div class="container">
-            <h1 id="name">Consult Data Li</h1>
-            <div class="aka">a/k/a DWBI Erudite</div>
+            <h1 id="name">Li Hernandez</h1>
+            <div class="aka">a/k/a Consult Li (formerly DWBI Erudite)</div>
             <div class="title" id="title">Data Engineer & Platform Architect</div>
             <div class="tech-stack" id="techStack">Azure Lakehouse · Databricks · Unity Catalog · Data Vault 2.0 · 15+ Years</div>
             <div class="contact-info">
                 <span id="location">Remote, US-based</span>
-                <a href="mailto:hello@data-li.com" id="email">hello@data-li.com</a>
+                <a href="mailto:contact@data-li.com" id="email">contact@data-li.com</a>
                 <a href="https://linkedin.com/in/consultli" target="_blank" id="linkedin">linkedin.com/in/consultli</a>
             </div>
         </div>
@@ -602,7 +602,7 @@
                 <button class="btn btn-secondary" onclick="copyContactInfo()">Copy Contact Info</button>
                 <button class="btn btn-secondary" onclick="shareProfile()">Share Profile</button>
             </div>
-            <p>&copy; 2026 Consult Data Li. This is a self-owned, portable professional profile.</p>
+            <p>&copy; 2026 Li Hernandez / Consult Li. This is a self-owned, portable professional profile.</p>
             <p style="font-size: 0.9em; opacity: 0.8;">Built with HTML/CSS/JavaScript for maximum portability and control.</p>
             <p style="font-size: 0.85em; opacity: 0.65; margin-top: 12px;">Last updated: <span id="lastModified">&mdash;</span></p>
         </div>
@@ -612,11 +612,11 @@
         // Load and render profile data
         const profileData = {
   "personal": {
-    "name": "Consult Data Li",
-    "alsoKnownAs": "DWBI Erudite",
+    "name": "Li Hernandez",
+    "alsoKnownAs": "Consult Li (formerly DWBI Erudite)",
     "title": "Data Engineer & Platform Architect",
     "location": "Remote, US-based",
-    "email": "hello@data-li.com",
+    "email": "contact@data-li.com",
     "linkedIn": "linkedin.com/in/consultli",
     "yearsExperience": 15,
     "keyTechnologies": "Azure Lakehouse · Databricks · Unity Catalog · Data Vault 2.0"
@@ -739,7 +739,7 @@
       "id": 1,
       "title": "Data Engineer",
       "company": "Large Infrastructure Engineering & Program Management Firm",
-      "type": "Staff Augmentation",
+      "type": "Contract",
       "startDate": "Feb 2023",
       "endDate": "Present",
       "duration": "3+ years",
@@ -1570,7 +1570,7 @@
             const element = document.documentElement;
             const opt = {
                 margin: 10,
-                filename: 'Consult_Data_Li_Profile.pdf',
+                filename: 'Li_Hernandez_Profile.pdf',
                 image: {type: 'jpeg', quality: 0.98},
                 html2canvas: {scale: 2},
                 jsPDF: {orientation: 'portrait', unit: 'mm', format: 'a4'}
@@ -1582,7 +1582,7 @@
 
         // Copy Contact Info
         function copyContactInfo() {
-            const contactText = `Consult Data Li (DWBI Erudite)\nData Engineer & Platform Architect\n\nEmail: hello@data-li.com\nLinkedIn: linkedin.com/in/consultli\nLocation: Remote, US-based`;
+            const contactText = `Li Hernandez (Consult Li, formerly DWBI Erudite)\nData Engineer & Platform Architect\n\nEmail: contact@data-li.com\nLinkedIn: linkedin.com/in/consultli\nLocation: Remote, US-based`;
             navigator.clipboard.writeText(contactText).then(() => {
                 alert('Contact information copied to clipboard!');
             });
@@ -1595,7 +1595,7 @@
 
             if (navigator.share) {
                 navigator.share({
-                    title: 'Consult Data Li - Professional Profile',
+                    title: 'Li Hernandez - Professional Profile',
                     text: shareText,
                     url: profileUrl
                 });
